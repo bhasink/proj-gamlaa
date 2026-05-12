@@ -370,6 +370,7 @@
     align-items: start;
     contain: layout style;
     isolation: isolate;
+    overflow-anchor: none;
 }
 .di-gallery.is-transitioning {
     pointer-events: none;

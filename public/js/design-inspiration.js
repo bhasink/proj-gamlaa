@@ -111,9 +111,9 @@
         }
         if (!REDUCED_MOTION && window.gsap) {
             window.gsap.fromTo(arr,
-                { opacity: 0, y: 40 },
-                { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
-                  stagger: { each: 0.07, from: 'start' } }
+                { opacity: 0 },
+                { opacity: 1, duration: 0.45, ease: 'power2.out',
+                  stagger: { each: 0.05, from: 'start' } }
             );
         }
     }
@@ -449,7 +449,7 @@
                 fetchPage(state.page + 1);
             }
         });
-    }, { rootMargin: '400px 0px' });
+    }, { rootMargin: '1000px 0px' });
     if (sentinel) scrollObserver.observe(sentinel);
 
     async function fetchPage(pageNumber, replace = false, mode = 'append') {
