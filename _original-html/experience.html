@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gamlaa</title>
+      <link rel="stylesheet" href="./css.css?a=26">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <style>
+   .top_banner p{
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 1.4vw;
+         } 
+         .top_banner h2{
+         line-height: 0.9 !important;
+         }
+         
+      </style>
+   </head>
+   <body class="homepage">
+      <header>
+         <a href="" class="head_logg">
+         <img src="./images/footer-logo.png" alt="" class="white-logo">
+         <img src="./images/gamla-black-logo.png" alt="" class="black-logo">
+         </a>
+         <div class="head_menu">
+            <nav>
+               <a href="">Who we are</a>
+               <a href="">Our Solutions</a>
+               <a href="">Our Work</a>
+               <a href="">What Inspires Us</a>
+               <a href="">For Architects</a>
+               <a href="">Resources</a>
+               <a href="">Experience Center</a>
+            </nav>
+            <a href="" class="contact_btn">
+            Contact Us
+            </a>
+            <div class="mb_menu_btn ham_btn">
+               <span class="line1"></span>
+               <span class="line2"></span>
+               <span class="line3"></span>
+            </div>
+         </div>
+      </header>
+      <main id="home">
+         <div class="top_banner">
+            <img src="./images/res-img/banner.jpg" alt="" class="for-dsk">
+            <img src="./images/banner-mb.png" alt="" class="for-mb">
+            <div class="banner_content">
+               <h2>  Experience Gamlaa
+               </h2>
+               <br> <br>
+               <p>Discover complete biophillic solutions in person.</p>
+            </div>
+         </div>
+      
+        
+        <!-- second-section -->
+         <section class="experience-section fade-up">
+  <div class="experience-container">
+    
+    <div class="left-experience">
+      <h2>Visit our<br>Experience Centre</h2>
+      <a href="#" class="cta-btn">
+        <span class="arrow-experience">→</span>
+      </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="right-experience">
+      <p>
+        Walk through our curated spaces featuring our services that help you
+        visualise your dream design.
+      </p>
+    </div>
+
+  </div>
+</section>
+         <!-- second-section-end  -->
+
+
+
+         <!-- third-section -->
+        <section class="experience fade-up">
+  <div class="experience__container">
+
+    <!-- LEFT -->
+    <div class="experience__content">
+      <h2 class="experience__title">
+        What You<br>Can Experience
+      </h2>
+
+      <div class="experience__features">
+        
+        <div class="experience__item">
+          <div class="experience__icon"><img src="./images/logo4.png"></div>
+          <p>Complete<br>Biophilic Solutions</p>
+        </div>
+
+        <div class="experience__item">
+          <div class="experience__icon"><img src="./images/logo1.png"></div>
+          <p>Wide Range of<br>Products</p>
+        </div>
+
+        <div class="experience__item">
+          <div class="experience__icon"><img src="./images/logo3.png"></div>
+          <p>Expert Advice</p>
+        </div>
+
+        <div class="experience__item">
+          <div class="experience__icon"><img src="./images/logo2.png"></div>
+          <p>Design Consultation</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="experience__image">
+      <img src="./images/banner-experience.png  " alt="Experience">
+    </div>
+
+  </div>
+</section>
+
+         <!-- third-section-end -->
+
+         <!-- how it works -->
+          
+<section class="how-it-works-section fade-up">
+  <div class="how-it-works-content">
+    <h2 class="how-it-works-title">How It Works?</h2>
+
+    <div class="how-it-works-steps">
+      
+      <div class="how-it-works-step">
+        <img src="./images/how-it-works-icon1.png" alt="">
+        <p>Choose<br>Your Centre</p>
+      </div>
+
+      <div class="how-it-works-step">
+        <img src="./images/how-it-works-icon2.png" alt="">
+        <p>Schedule<br>Your Visit</p>
+      </div>
+
+      <div class="how-it-works-step">
+        <img src="./images/how-it-works-icon3.png" alt="">
+        <p>On-Site<br>Experience</p>
+      </div>
+
+      <div class="how-it-works-step final-icon">
+        <img src="./images/how-it-works-icon5.png" alt="">
+        <p>Consultation<br>& Next Steps</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+         <!-- how it works ends -->
+<!-- location-start -->
+ <div class="map-des fade-up">
+    <h2 class="map-title">
+       Center Location
+      </h2>
+ <div class="map-section">
+  <div id="map"></div>
+
+  <!-- LOCATION LIST -->
+  <div class="location-list" id="locationList"></div>
+
+</div>
+</div>
+
+<script>
+  let map;
+
+  const locations = [
+    { name: "Mumbai", lat: 19.0760, lng: 72.8777 },
+    { name: "Delhi", lat: 28.7041, lng: 77.1025 },
+    { name: "Bangalore", lat: 12.9716, lng: 77.5946 },
+    { name: "Pune", lat: 18.5204, lng: 73.8567 },
+    { name: "Hyderabad", lat: 17.3850, lng: 78.4867 },
+  ];
+
+  function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 5,
+      center: { lat: 22.9734, lng: 78.6569 },
+    });
+
+    const bounds = new google.maps.LatLngBounds();
+
+    locations.forEach((loc) => {
+      const position = { lat: loc.lat, lng: loc.lng };
+
+      const marker = new google.maps.Marker({
+        position: position,
+        map: map,
+        title: loc.name,
+        icon: "https://maps.google.com/mapfiles/ms/icons/green-dot.png"
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: `<strong>${loc.name}</strong>`
+      });
+
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+        map.setCenter(position);
+        map.setZoom(10);
+      });
+
+      bounds.extend(position);
+
+      // RIGHT PANEL ITEM
+      const item = document.createElement("div");
+      item.className = "location-item";
+      item.innerHTML = `
+         <i class="fa-solid fa-location-dot"></i> <strong>${loc.name}</strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      `;
+
+      item.addEventListener("click", () => {
+        map.setCenter(position);
+        map.setZoom(10);
+        infoWindow.open(map, marker);
+      });
+
+      document.getElementById("locationList").appendChild(item);
+    });
+
+    map.fitBounds(bounds);
+  }
+</script>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_n4fFPW1-NGlmYrWgtpE7eGR4TsnRKrk&callback=initMap" async defer></script>
+
+<!-- testimonial-start -->
+
+<section class="testimonials-section fade-up">
+  <h2 class="testimonials-title">What Our Clients Say</h2>
+
+  <div class="testimonials-carousel-wrapper">
+    <button class="testimonials-arrow left">&#8249;</button>
+
+    <div class="testimonials-carousel">
+      <div class="testimonials-track">
+
+        <div class="testimonials-card">
+          <img src="https://i.pravatar.cc/100?img=12" alt="">
+          <span class="testimonials-quote">“</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="testimonials-footer">
+            <span class="testimonials-line"></span>
+            <div>
+              <strong>Lorem Ipsum</strong>
+              <small>Designation</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-card">
+          <img src="https://i.pravatar.cc/100?img=32" alt="">
+          <span class="testimonials-quote">“</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="testimonials-footer">
+            <span class="testimonials-line"></span>
+            <div>
+              <strong>Lorem Ipsum</strong>
+              <small>Designation</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-card">
+          <img src="https://i.pravatar.cc/100?img=56" alt="">
+          <span class="testimonials-quote">“</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="testimonials-footer">
+            <span class="testimonials-line"></span>
+            <div>
+              <strong>Lorem Ipsum</strong>
+              <small>Designation</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="testimonials-arrow right">&#8250;</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+<script>
+    const track = document.querySelector('.testimonials-track');
+const nextBtn = document.querySelector('.testimonials-arrow.right');
+const prevBtn = document.querySelector('.testimonials-arrow.left');
+
+const gap = 30;
+const cardWidth = track.children[0].offsetWidth + gap;
+let isAnimating = false;
+
+// ✅ Ensure buffer cards exist BEFORE any animation
+function ensureForwardBuffer() {
+  if (track.children.length < 6) {
+    Array.from(track.children).forEach(card => {
+      track.appendChild(card.cloneNode(true));
+    });
+  }
+}
+
+/* ✅ FORWARD — ZERO BLANK SPACE */
+nextBtn.addEventListener('click', () => {
+  if (isAnimating) return;
+  isAnimating = true;
+
+  ensureForwardBuffer();
+
+  track.style.transition = 'transform 0.5s linear';
+  track.style.transform = `translateX(-${cardWidth}px)`;
+
+  track.addEventListener(
+    'transitionend',
+    () => {
+      track.appendChild(track.firstElementChild);
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(0)';
+      isAnimating = false;
+    },
+    { once: true }
+  );
+});
+
+/* ✅ BACKWARD — ALREADY SAFE */
+prevBtn.addEventListener('click', () => {
+  if (isAnimating) return;
+  isAnimating = true;
+
+  track.style.transition = 'none';
+  track.prepend(track.lastElementChild);
+  track.style.transform = `translateX(-${cardWidth}px)`;
+
+  requestAnimationFrame(() => {
+    track.style.transition = 'transform 0.5s linear';
+    track.style.transform = 'translateX(0)';
+  });
+
+  track.addEventListener(
+    'transitionend',
+    () => {
+      isAnimating = false;
+    },
+    { once: true }
+  );
+});
+    </script>
+
+<!-- testimonial-start-end -->
+
+
+<!-- contact-form-start -->
+ <div class="experience-form-container fade-up">
+  <div class="form-left">
+    <h1>Let’s bring biophilic experience to you</h1>
+  </div>
+
+  <div class="form-right">
+    <form class="experience-form">
+      
+      <div class="form-row">
+        <div class="input-group">
+          <input type="text" placeholder="Full Name*" required>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Email*" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" placeholder="Phone Number*" required>
+      </div>
+
+      <div class="input-group">
+        <textarea placeholder="Message*" required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+
+    </form>
+  </div>
+</div>
+<!-- contact-form-end -->
+
+
+
+
+
+
+
+
+ <!-- location-map-end -->
+
+
+         <div class="home_form">
+            <div class="form_shape_maquee">
+               <img src="./images/green-leaf-marquee.png" alt="">
+               <img src="./images/green-leaf-marquee.png" alt="">
+            </div>
+         </div>
+      </main>
+      <script>
+         function scrollGallery(direction){
+             const viewport = document.getElementById('galleryViewport');
+             const card = document.querySelector('.card');
+             const gap = 30;
+             const scrollAmount = card.offsetWidth + gap;
+         
+             viewport.scrollBy({
+                 left: scrollAmount * direction,
+                 behavior: 'smooth'
+             });
+         }
+      </script>
+
+
+    
+
+
+
+
+
+      <!-- footer section -->
+      <footer>
+         <div class="footer_container">
+            <!-- Top Row: Text + Contact Info -->
+            <div class="footer_row footer_top">
+               <div class="footer_text">
+                  <p>Nature has been quietly absent from spaces. It is now often treated as an afterthought rather than an essential part of design. But at Gamlaa, we believe that truly great spaces don't just look good, <span class="highlight">they feel good too!</span></p>
+               </div>
+               <div class="footer_contact_info">
+                  <div class="f_info">
+                     <img src="./images/loc-green.png" alt="">
+                     <div>
+                        <p>Headquarters - Jyothi Flora, Phase 2, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
+                     </div>
+                  </div>
+                  <div class="f_info">
+                     <img src="./images/mail-icon.png" alt="">
+                     <p>contact@gamlaa.com</p>
+                  </div>
+                  <div class="f_info">
+                     <img src="./images/call-icon.png" alt="">
+                     <p>+91 9391966078</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Middle Row: Logo + Social Icons -->
+            <div class="footer_row footer_middle">
+               <div class="footer_logo">
+                  <img src="./images/footer-logo.png" alt="Gamlaa">
+                  <a href="" class="footer_contact_btn">Contact Us</a>
+               </div>
+               <div class="footer_social">
+                  <a href="" class="social_icon">
+                  <img src="./images/tweet.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/yt.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/whatsapp.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/tele.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/linked.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/fb.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/insta.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <!-- Bottom Row: Line + Menu -->
+            <div class="footer_row footer_bottom">
+               <div class="footer_line"></div>
+               <nav class="footer_nav">
+                  <a href="">Who we are</a>
+                  <a href="">Our Solutions</a>
+                  <a href="">Who we serve</a>
+                  <a href="">Design Inspiration</a>
+                  <a href="">For Architects</a>
+                  <a href="">Resources</a>
+                  <a href="">Experience Center</a>
+               </nav>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+      <script>
+         var serviceSwiper = new Swiper(".services_slider .swiper", {
+             slidesPerView: "4",
+             spaceBetween: 10,
+             centeredSlides: false,
+             navigation: {
+                 nextEl: ".swiper-button-next",
+                 prevEl: ".swiper-button-prev",
+             },
+             breakpoints: {
+                 100: {
+                 slidesPerView: "1.2",
+                 spaceBetween: 12,
+                 },
+                 768: {
+                     slidesPerView: "3.2",
+                     spaceBetween: 16,
+                 },
+                 1024: {
+                     slidesPerView: "4",
+                     spaceBetween: 20,
+                 },
+             },
+         });
+         
+         
+         
+         $(window).scroll(function() {
+             var scroll = $(window).scrollTop();
+         
+             if (scroll >= 200) {
+                 $("header").addClass("darkHeader");
+             } else {
+                 $("header").removeClass("darkHeader");
+             }
+         });
+         
+         
+         let lastScrollTop = 0;
+         
+         window.addEventListener('scroll', function() {
+         
+             let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+         
+             if (currentScroll < lastScrollTop) {
+                 document.body.classList.add('scrolling-up');
+                 document.body.classList.remove('scrolling-down');
+             } else {
+                 document.body.classList.remove('scrolling-up');
+                 document.body.classList.add('scrolling-down');
+             }
+         
+             lastScrollTop = currentScroll;
+         
+         });
+         
+         
+         
+         $('.mb_menu_btn').click(function() {
+         
+             $('header').toggleClass('open_menu');
+         
+             $(this).toggleClass('close_menu');
+             $(this).toggleClass('ham_btn');
+             
+         });
+         
+         
+         const lenis = new Lenis({
+             lerp: 0.06, 
+             wheelMultiplier: 1, 
+         });
+         
+         function raf(time) {
+             lenis.raf(time);
+             requestAnimationFrame(raf);
+         }
+         requestAnimationFrame(raf);
+         
+         
+         
+         
+      </script>
+      <script>
+         // const mediaQueryList = window.matchMedia("(max-width: 768px)");
+         
+         if (window.innerWidth <= 768) { 
+             document.body.classList.add("mobile_res");
+             document.body.classList.remove("desktop_site");
+         } else {
+             document.body.classList.remove("mobile_res");
+             document.body.classList.add("desktop_site");
+         }
+         
+         
+         gsap.registerPlugin(ScrollTrigger, SplitText, MorphSVGPlugin);
+         
+         
+         
+         gsap.set('.mobile_res header .head_menu nav', {
+             right: "-100%"
+         });
+         
+         
+         gsap.set('.mobile_res header .head_menu nav a', {
+             x: 30,
+             autoAlpha: 0,
+         });
+         
+         
+         const menuTl = gsap.timeline({ paused: true, reversed: true });
+         
+         
+         menuTl.to('.mobile_res header .head_menu nav', {
+             right: 0,
+             duration: 0.6,
+             ease: "expo.inOut",
+             overwrite: "auto"
+         })
+             
+         .to('.mobile_res header .head_menu nav a', {
+             x: 0,
+             autoAlpha: 1,
+             duration: 0.4,
+             ease: "circ.inOut",
+             stagger: 0.08,
+             overwrite: "auto"
+             }, "-=0.2");
+             
+             $('.mobile_res header .mb_menu_btn.ham_btn').on('click', function () {
+             if (menuTl.reversed()) {
+                 menuTl.play();
+             } else {
+                 menuTl.reverse();
+             }
+         });
+         
+         $('.mobile_res header .mb_menu_btn.close_menu').on('click', function () {
+             menuTl.reverse();
+         });
+         
+         
+         gsap.set('.desktop_site header .head_menu a', {
+             y: 40,
+             opacity: 0,
+         });
+         
+         gsap.set('header .head_logg', {
+             scale: 0.2,
+             opacity: 0,
+         });
+         
+         gsap.to('header .head_logg', {
+             scale: 1,
+             opacity: 1,
+             duration: 0.6,
+             ease: "back.out(1.7)",
+         });
+         
+         
+         gsap.to('.desktop_site header .head_menu a', {
+             y: 0,
+             opacity: 1,
+             duration: 0.6,
+             stagger: 0.1,
+             ease: "back.out(1.7)",
+         });
+         
+         
+         
+         let bannerH2 = new SplitText('.top_banner .banner_content h2', {
+             type: "words"
+         });
+         
+         let aboutH2 = document.querySelector('.about h2')
+             ? new SplitText('.about h2', { type: "words" })
+             : { words: [] };
+         
+         let inspireImg = document.querySelectorAll('.inspire_tiles img');
+         
+         
+         gsap.fromTo('header.open_menu .head_menu nav', {
+             x: -100,
+             opacity: 0,
+         },{
+             x: 0,
+             opacity: 1,
+             duration: 0.3,
+         });
+         
+         
+         gsap.fromTo('header.open_menu .head_menu nav a', {
+             y: 40,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.3,
+             stagger: 0.15,
+         });
+         
+         
+         gsap.set('.top_banner .banner_content h2', {
+             opacity: 1,
+         });
+         
+         gsap.set(bannerH2.words,{
+             y: 40,
+             opacity: 0,
+         });
+         
+         gsap.to(bannerH2.words, {
+             y: 0,
+             opacity: 1,
+             duration: 0.4,
+             stagger: 0.2
+         });
+         
+         
+         
+         const leafPaths = gsap.utils.toArray('.about_leaf_svg path');
+         
+         leafPaths.forEach(path => {
+             const length = path.getTotalLength();
+             gsap.set(path, {
+                 strokeDasharray: length,
+                 strokeDashoffset: length
+             });
+         });
+         
+         gsap.timeline({
+             scrollTrigger: {
+                 trigger: ".about",
+                 start: "top bottom",
+                 end: "bottom center",
+                 scrub: 1,
+             }
+         })
+         .to(leafPaths, {
+             strokeDashoffset: 0,
+             duration: 2,
+             stagger: 0.2,
+             ease: "power2.out"
+         });
+         
+         
+         const abouttl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: ".about",
+                 start: "top 80%",
+                 toggleActions: "play none none reverse"
+             }
+         });
+         
+         // const aboutLeaf = gsap.utils.toArray('.about_leaf_svg path');
+         
+         abouttl.from(aboutH2.words, {
+             y: 40,
+             opacity: 0,
+             duration: 0.2,
+             stagger: 0.1
+         },'-=0.2')
+         
+         .from('.about_sec_content img', {
+             x: 40,
+             opacity: 0,
+             duration: 1,
+         },'-=0.8')
+         
+         .from('.about_sec_flex a', {
+             x: -40,
+             opacity: 0,
+             duration: 1,
+         },'-=0.8');
+         
+         
+         const serviceTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: '.services_slider',
+                 start: 'top 80%',
+                 toggleActions: "play none none reverse"
+             }
+         });
+         
+         
+         serviceTl.from('.services_slider h2', {
+             y: 40,
+             opacity: 0,
+             duration: 0.4,
+         })
+         
+         
+         .from('.services_slider .service_box', {
+             y: 40,
+             opacity: 0,
+             duration: 0.4,
+             stagger: 0.2
+         });
+         
+         
+         const workTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: '.our_work',
+                 start: 'top 80%',
+                 toggleActions: "play none none reverse"
+             }
+         });
+         
+         
+         workTl.from('.our_work h2', {
+             x: -40,
+             opacity: 0,
+             duration: 0.5,
+         })
+         
+         .fromTo('.work_tiles .work_box', {
+             y: 40,
+             opacity: 0,
+         }, {
+             y: 0,
+             opacity: 1,
+             duration: 0.4,
+             stagger: 0.15,
+         });
+         
+         
+         
+         
+         
+         function heroWeScroll() {
+             const weListEl = document.querySelector(".we_list");
+             const weTextEl = document.querySelector(".we_text");
+             if (!weListEl || !weTextEl) return;
+             const weRightHeight = weListEl.offsetHeight;
+             const weTextHeight = weTextEl.offsetHeight;
+             const movementHeight = weRightHeight - weTextHeight;
+         
+             const desc = gsap.utils.toArray(".fix_para p");
+             const splitRefs = [];
+             let currentIndex = 0;
+         
+             desc.forEach((p, i) => {
+                 const split = new SplitText(p, { type: "lines" });
+                 splitRefs.push(split.lines);
+         
+                 gsap.set(p, { position: "absolute", top: 0, left: 0, width: "100%" });
+                 gsap.set(split.lines, { autoAlpha: 0, y: 50 });
+         
+                 if (i === 0) {
+                     gsap.set(split.lines, { autoAlpha: 1, y: 0 });
+                 } else {
+                     gsap.set(p, { autoAlpha: 0 });
+                 }
+             });
+         
+         
+             const heroWeScrollTimeline = gsap.timeline({
+                 scrollTrigger: {
+                     trigger: ".we_floating",
+                     start: "center bottom",
+                     end: "center top",
+                     scrub: true,
+                     onUpdate: (self) => {
+         
+                         let i = Math.floor(self.progress * desc.length);
+                         i = Math.min(Math.max(i, 0), desc.length - 1);
+         
+                         if (i !== currentIndex) {
+                             gsap.to(splitRefs[currentIndex], {
+                                 autoAlpha: 0,
+                                 y: 50,
+                                 duration: 0.8,
+                                 stagger: 0.2
+                             });
+         
+                             gsap.set(desc[currentIndex], { autoAlpha: 0 });
+         
+                             gsap.set(desc[i], { autoAlpha: 1 });
+                             gsap.to(splitRefs[i], {
+                                 autoAlpha: 1,
+                                 y: 0,
+                                 duration: 0.8,
+                                 stagger: 0.2,
+                                 ease: "back.out(1.7)",
+                             });
+         
+                             currentIndex = i;
+         
+                         }
+         
+         
+                     }
+                 },
+             });
+         
+             heroWeScrollTimeline.fromTo(".we_text", { 
+                     yPercent: 0 
+                 },
+                 { 
+                     y: movementHeight, 
+                     ease: "linear" 
+                 }, 0
+             );
+         }
+         
+         heroWeScroll();
+         
+         
+         
+         
+         
+         
+         const inspireTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: '.inspire_sec',
+                 start: 'top 80%',
+                 toggleActions: "play none none reverse"
+             }
+         });
+         
+         const inspireH2 = document.querySelector('.inspire_tiles h2')
+             ? new SplitText('.inspire_tiles h2', { type: 'words' })
+             : { words: [] };
+         
+         inspireTl.from(inspireImg, {
+             opacity: 0,
+             scale: 0.2,
+             duration: 0.4,
+             stagger: 0.15,
+         })
+         
+         .from(inspireH2.words, {
+             y: 40,
+             opacity: 0,
+             duration: 0.4,
+             stagger: 0.15,
+         }, '-=0.5')
+         
+         
+         const formTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: '.home_form',
+                 start: 'top 80%',
+                 toggleActions: "play none none reverse"
+             }
+         });
+         
+         const formH2 = document.querySelector('.home_form h2')
+             ? new SplitText('.home_form h2', { type: 'words' })
+             : { words: [] }
+         
+         formTl.from(formH2.words, {
+             y: 40,
+             opacity: 0,
+             duration: 0.4,
+             stagger: 0.15,
+         });
+         
+         
+         
+         const footerTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: 'footer',
+                 start: "top 80%",
+                 toggleActions: "play none none reverse",
+             }
+         });
+         
+         const footerText = new SplitText('.footer_text p', {
+             type: 'lines',
+         });
+         
+         
+         footerTl.fromTo(footerText.lines, {
+             y: 20, 
+             opacity: 0,
+         },{
+             y: 0, 
+             opacity: 1, 
+             stagger: 0.03, 
+             duration: 0.4, 
+             ease: "power2.out",
+         })
+         
+         .fromTo('.footer_contact_info .f_info', {
+             x: 20, 
+             opacity: 0,
+         },{
+             x: 0, 
+             opacity: 1, 
+             stagger: 0.05, 
+             duration: 0.3, 
+             ease: "power2.out",
+         }, "-=0.3")
+         
+         .fromTo('.footer_logo img', {
+             y: 30,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.4,
+             ease: "power2.out",
+         }, "-=0.2")
+         
+         .fromTo('.footer_logo .footer_contact_btn', {
+             y: 15,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.3,
+             ease: "power2.out",
+         }, "-=0.2")
+         
+         .fromTo('.footer_social .social_icon', {
+             y: 15, 
+             opacity: 0,
+         },{
+             y: 0, 
+             opacity: 1, 
+             stagger: 0.03, 
+             duration: 0.25, 
+             ease: "power2.out",
+         }, "-=0.2")
+         
+         .fromTo('.footer_line', {
+             scaleX: 0,
+             transformOrigin: "left center",
+         },{
+             scaleX: 1,
+             duration: 0.5,
+             ease: "power2.out",
+         }, "-=0.15")
+         
+         .fromTo('.footer_nav a', {
+             y: 10, 
+             opacity: 0,
+         },{
+             y: 0, 
+             opacity: 1, 
+             stagger: 0.03, 
+             duration: 0.25, 
+             ease: "power2.out",
+         }, "-=0.3");
+         
+         
+         
+         
+         
+         
+      </script>
+      <script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Fade-up for each section
+  gsap.utils.toArray('.fade-up').forEach((section) => {
+
+    gsap.fromTo(section,
+      {
+        y: 80,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 85%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+
+  });
+</script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+// ✅ Fix for Lenis + ScrollTrigger sync
+lenis.on('scroll', ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
+
+
+// ✅ Single clean fade-up animation
+gsap.utils.toArray('.fade-up').forEach((section) => {
+
+  gsap.fromTo(section,
+    {
+      y: 60,
+      opacity: 0
+    },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 90%",
+        toggleActions: "play none none reverse"
+      }
+    }
+  );
+
+});
+if (window.innerWidth < 768) {
+  ScrollTrigger.defaults({
+    start: "top 95%"
+  });
+}6y
+</script>
+   </body>
+</html>

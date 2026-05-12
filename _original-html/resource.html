@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gamlaa</title>
+      <link rel="stylesheet" href="./css.css?a=26">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+      <style>
+         .top_banner p{
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 1.4vw;
+         }
+         .top_banner h2{
+         line-height: 0.9 !important;
+         }
+         
+      </style>
+
+      <style>
+         .top_banner p{
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 1.4vw;
+         }
+         .top_banner h2{
+         line-height: 0.9 !important;
+         }
+
+         
+         /* Global typography structure (fix SplitText font inheritance) */
+         body {
+             font-family: "Montserrat", sans-serif;
+         }
+
+         h1, h2, h3 {
+        font-family: albra-regular  !important;
+        font-weight: 400;
+        }
+
+         /* Ensure GSAP SplitText wrappers inherit heading font */
+         .split-line,
+         .split-word,
+         .split-char {
+             font-family: inherit;
+         }
+         
+         /* Override css.css div selector conflict (without editing css.css) */
+         h1 div,
+         h2 div,
+         h3 div,
+         h1 span,
+         h2 span,
+         h3 span {
+             font-family: inherit !important;
+         }
+      </style>
+   </head>
+   <body class="homepage">
+      <header>
+         <a href="" class="head_logg">
+         <img src="./images/footer-logo.png" alt="" class="white-logo">
+         <img src="./images/gamla-black-logo.png" alt="" class="black-logo">
+         </a>
+         <div class="head_menu">
+            <nav>
+               <a href="">Who we are</a>
+               <a href="">Our Solutions</a>
+               <a href="">Our Work</a>
+               <a href="">What Inspires Us</a>
+               <a href="">For Architects</a>
+               <a href="">Resources</a>
+               <a href="">Experience Center</a>
+            </nav>
+            <a href="" class="contact_btn">
+            Contact Us
+            </a>
+            <div class="mb_menu_btn ham_btn">
+               <span class="line1"></span>
+               <span class="line2"></span>
+               <span class="line3"></span>
+            </div>
+         </div>
+      </header>
+      <main id="home">
+         <div class="top_banner">
+            <img src="./images/res-img/banner.jpg" alt="" class="for-dsk">
+            <img src="./images/banner-mb.png" alt="" class="for-mb">
+            <div class="banner_content">
+               <h2> Our Resources
+               </h2>
+               <br> <br>
+               <p>Ideas that help your spaces thrive — naturally.</p>
+            </div>
+         </div>
+      
+        
+         <!-- last-section -->
+         <div class="blog-section">
+            <div class="blog-header">
+               <h1>Blogs</h1>
+               <p>Lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum</p>
+            </div>
+            <div class="slider-wrapper">
+               <div class="blog-slider" id="slider">
+                  <div class="blog-card">
+                     <img src="./images/blog1.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+                  <div class="blog-card">
+                     <img src="./images/blog2.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+                  <div class="blog-card">
+                     <img src="./images/blog3.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+                  <div class="blog-card">
+                     <img src="./images/blog1.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+               </div>
+               <div class="scroll-buttons">
+                  <button id="prev">&#10094;</button>
+                  <button id="next">&#10095;</button>
+               </div>
+            </div>
+         </div>
+         <script>
+            const slider = document.getElementById("slider");
+            const prev = document.getElementById("prev");
+            const next = document.getElementById("next");
+            const gap = 24;
+            
+            let cards = Array.from(slider.children);
+            
+            /* CLONE FOR BOTH SIDES */
+            cards.forEach(card => {
+                slider.appendChild(card.cloneNode(true));
+                slider.insertBefore(card.cloneNode(true), slider.firstChild);
+            });
+            
+            let index = cards.length;
+            let cardWidth = cards[0].offsetWidth + gap;
+            
+            /* INITIAL POSITION */
+            slider.style.transform = `translateX(-${index * cardWidth}px)`;
+            
+            /* BLINK EFFECT */
+            function blink(btn) {
+                btn.classList.add("active");
+                setTimeout(() => btn.classList.remove("active"), 150);
+            }
+            
+            function move(dir, btn) {
+                blink(btn);
+                slider.style.transition = "transform 0.45s ease";
+                index += dir;
+                slider.style.transform = `translateX(-${index * cardWidth}px)`;
+            
+                setTimeout(() => {
+                    slider.style.transition = "none";
+            
+                    if (index >= cards.length * 2) {
+                        index = cards.length;
+                    }
+                    if (index <= 0) {
+                        index = cards.length;
+                    }
+            
+                    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+                }, 460);
+            }
+            
+            next.onclick = () => move(1, next);
+            prev.onclick = () => move(-1, prev);
+         </script>
+         <!--  -->
+        
+
+
+
+                <!-- resource section -->
+                 <section class="resource-section">
+
+<div class="resource-header">
+<h1>Case Studies</h1>
+<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+</div>
+
+<div class="resource-slider-wrapper">
+
+<div  id="resourceSlider" class="resource-slider">
+
+<div class="resource-card">
+<img src="./images/case-study/case-study-1.png">
+<div class="resource-card-content">
+<div>
+<h3>Prestige Silver</h3>
+<p>Lorem ipsum lorem ipsum lorem ipsum</p>
+</div>
+<button class="resource-btn">Case Study →</button>
+</div>
+</div>
+
+<div class="resource-card">
+<img src="./images/case-study/case-study-2.png">
+<div class="resource-card-content">
+<div>
+<h3>Northern Trust, Pune</h3>
+<p>Lorem ipsum lorem ipsum lorem ipsum</p>
+</div>
+<button class="resource-btn">Case Study →</button>
+</div>
+</div>
+
+<div class="resource-card">
+<img src="./images/case-study/case-study-3.png">
+<div class="resource-card-content">
+<div>
+<h3>Palm Meadows, Hyderabad</h3>
+<p>Lorem ipsum lorem ipsum lorem ipsum</p>
+</div>
+<button class="resource-btn">Case Study →</button>
+</div>
+</div>
+
+<div class="resource-card">
+<img src="./images/case-study/case-study-1.png">
+<div class="resource-card-content">
+<div>
+<h3>SeedWorks, Hyderabad</h3>
+<p>Lorem ipsum lorem ipsum lorem ipsum</p>
+</div>
+<button class="resource-btn">Case Study →</button>
+</div>
+</div>
+
+</div>
+
+<div class="resource-nav">
+<button id="resourcePrev">&#8249;</button>
+<button id="resourceNext">&#8250;</button>
+</div>
+
+</div>
+
+</section>
+
+ <script>
+const resourceSlider = document.getElementById("resourceSlider");
+const resourcePrev = document.getElementById("resourcePrev");
+const resourceNext = document.getElementById("resourceNext");
+const resourceGap = 24;
+
+let resourceCards = Array.from(resourceSlider.children);
+
+/* CLONE FOR BOTH SIDES */
+resourceCards.forEach(card => {
+    resourceSlider.appendChild(card.cloneNode(true));
+    resourceSlider.insertBefore(card.cloneNode(true), resourceSlider.firstChild);
+});
+
+let resourceIndex = resourceCards.length;
+let resourceCardWidth = resourceCards[0].offsetWidth + resourceGap;
+
+/* INITIAL POSITION */
+resourceSlider.style.transform = `translateX(-${resourceIndex * resourceCardWidth}px)`;
+
+/* BLINK EFFECT */
+function resourceBlink(btn) {
+    btn.classList.add("active");
+    setTimeout(() => btn.classList.remove("active"), 150);
+}
+
+function resourceMove(dir, btn) {
+    resourceBlink(btn);
+    resourceSlider.style.transition = "transform 0.45s ease";
+    resourceIndex += dir;
+    resourceSlider.style.transform = `translateX(-${resourceIndex * resourceCardWidth}px)`;
+
+    setTimeout(() => {
+        resourceSlider.style.transition = "none";
+
+        if (resourceIndex >= resourceCards.length * 2) {
+            resourceIndex = resourceCards.length;
+        }
+        if (resourceIndex <= 0) {
+            resourceIndex = resourceCards.length;
+        }
+
+        resourceSlider.style.transform = `translateX(-${resourceIndex * resourceCardWidth}px)`;
+    }, 460);
+}
+
+resourceNext.onclick = () => resourceMove(1, resourceNext);
+resourcePrev.onclick = () => resourceMove(-1, resourcePrev);
+</script>
+
+                 <!-- resource section-end -->
+
+
+
+
+    <!-- Guide-sec-start -->
+
+    <div class="guide-container">
+
+<div class="guide-header">
+<h1>Guide</h1>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+</p>
+</div>
+
+<div class="guide-slider-wrapper">
+
+<div class="guide-slider" id="guideSlider">
+
+<!-- CARD 1 -->
+<div class="guide-card">
+<div class="guide-image">
+<img src="./images/guide-1.png">
+</div>
+<div class="guide-content">
+<h3>Lorem Ipsum</h3>
+<p>Lorem Ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="guide-btn">Download Catalogue <span><img src="./images/resource-guide.png" alt=""></span></div>
+</div>
+</div>
+
+<!-- CARD 2 -->
+<div class="guide-card">
+<div class="guide-image">
+<img src="./images/guide-2.png">
+</div>
+<div class="guide-content">
+<h3>Lorem Ipsum</h3>
+<p>Lorem Ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="guide-btn">Download Catalogue <span><img src="./images/resource-guide.png" alt=""></span></div>
+</div>
+</div>
+
+<!-- CARD 3 -->
+<div class="guide-card">
+<div class="guide-image">
+<img src="./images/guide-1.png">
+</div>
+<div class="guide-content">
+<h3>Lorem Ipsum</h3>
+<p>Lorem Ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="guide-btn">Download Catalogue <span><img src="./images/resource-guide.png" alt=""></span></div>
+</div>
+</div>
+
+</div>
+
+<div class="guide-navigation">
+<div class="guide-arrow" id="guidePrev">&#10094;</div>
+<div class="guide-arrow" id="guideNext">&#10095;</div>
+</div>
+
+</div>
+
+
+
+</div>
+
+<script>
+
+const guideSliderEl=document.getElementById("guideSlider")
+const guideNextBtn=document.getElementById("guideNext")
+const guidePrevBtn=document.getElementById("guidePrev")
+
+const guideMoveWidth = guideSliderEl.firstElementChild.offsetWidth + 60
+
+function guideBlink(btn){
+btn.classList.add("active")
+setTimeout(()=>btn.classList.remove("active"),200)
+}
+
+guideNextBtn.onclick=()=>{
+
+guideSliderEl.style.transform=`translateX(-${guideMoveWidth}px)`
+guideBlink(guideNextBtn)
+
+guideSliderEl.addEventListener("transitionend",function handler(){
+
+guideSliderEl.appendChild(guideSliderEl.firstElementChild)
+
+guideSliderEl.style.transition="none"
+guideSliderEl.style.transform="translateX(0)"
+
+setTimeout(()=>{
+guideSliderEl.style.transition="transform .5s ease"
+},10)
+
+guideSliderEl.removeEventListener("transitionend",handler)
+
+})
+
+}
+
+guidePrevBtn.onclick=()=>{
+
+guideSliderEl.insertBefore(guideSliderEl.lastElementChild,guideSliderEl.firstElementChild)
+
+guideSliderEl.style.transition="none"
+guideSliderEl.style.transform=`translateX(-${guideMoveWidth}px)`
+
+setTimeout(()=>{
+guideSliderEl.style.transition="transform .5s ease"
+guideSliderEl.style.transform="translateX(0)"
+},10)
+
+guideBlink(guidePrevBtn)
+
+}
+
+</script>
+
+<!-- New Update -->
+ <div class="news-container">
+
+<h1 class="news-title">News Updates</h1>
+
+<div class="news-slider-wrapper">
+
+<div class="news-slider" id="newsSlider">
+
+<div class="news-card">
+<div class="news-image">
+<img src="./images/news/new-updates-1.png">
+</div>
+<div class="news-content">
+<h3>Workspace</h3>
+<p>Modern workspace ideas for productivity.</p>
+<button class="news-read-btn">Read More</button>
+</div>
+</div>
+
+<div class="news-card">
+<div class="news-image">
+<img src="./images/news/new-updates-2.png">
+</div>
+<div class="news-content">
+<h3>Interior Design</h3>
+<p>Beautiful interiors with natural lighting.</p>
+<button class="news-read-btn">Read More</button>
+</div>
+</div>
+
+<div class="news-card">
+<div class="news-image">
+<img src="./images/news/new-updates-1.png">
+</div>
+<div class="news-content">
+<h3>Office Setup</h3>
+<p>Modern office setups improving productivity.</p>
+<button class="news-read-btn">Read More</button>
+</div>
+</div>
+
+</div>
+
+<div class="news-buttons">
+<div class="news-arrow" id="newsPrev">&#10094;</div>
+<div class="news-arrow" id="newsNext">&#10095;</div>
+</div>
+
+</div>
+</div>
+
+<script>
+
+const newsSliderEl = document.getElementById("newsSlider")
+const newsNextBtn = document.getElementById("newsNext")
+const newsPrevBtn = document.getElementById("newsPrev")
+
+const newsSlideWidth = newsSliderEl.firstElementChild.offsetWidth + 30
+
+function newsBlink(btn){
+btn.classList.add("active")
+setTimeout(()=>btn.classList.remove("active"),200)
+}
+
+/* FORWARD */
+
+newsNextBtn.onclick = () => {
+
+newsSliderEl.style.transform = `translateX(-${newsSlideWidth}px)`
+newsBlink(newsNextBtn)
+
+newsSliderEl.addEventListener("transitionend", function handler(){
+
+newsSliderEl.appendChild(newsSliderEl.firstElementChild)
+
+newsSliderEl.style.transition = "none"
+newsSliderEl.style.transform = "translateX(0)"
+
+setTimeout(()=>{
+newsSliderEl.style.transition = "transform .5s ease"
+},10)
+
+newsSliderEl.removeEventListener("transitionend", handler)
+
+})
+
+}
+
+/* BACKWARD */
+
+newsPrevBtn.onclick = () => {
+
+newsSliderEl.insertBefore(newsSliderEl.lastElementChild, newsSliderEl.firstElementChild)
+
+newsSliderEl.style.transition="none"
+newsSliderEl.style.transform=`translateX(-${newsSlideWidth}px)`
+
+setTimeout(()=>{
+newsSliderEl.style.transition="transform .5s ease"
+newsSliderEl.style.transform="translateX(0)"
+},10)
+
+newsBlink(newsPrevBtn)
+
+}
+
+</script>
+
+
+<!-- FAQ -->
+ <div class="faq-container">
+
+<h1 class="faq-title">Frequently Asked Questions</h1>
+
+<div class="faq-list">
+
+<div class="faq-card">
+<div class="faq-card-question">
+What does Gamlaa do?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+We are design experts who work with nature and integrate plants into interior architecture to create biophilic environments.
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-card-question">
+What is bioscaping?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+Bioscaping integrates greenery and nature-driven design to improve wellness and aesthetics in indoor environments.
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-card-question">
+Do you offer services pan-India?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+Yes, we provide services across India depending on project requirements.
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-card-question">
+How do I get started with a project?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+Contact our team for a consultation and we will guide you through the process.
+</div>
+</div>
+<div class="faq-card">
+<div class="faq-card-question">
+How do I get started with a project?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+Contact our team for a consultation and we will guide you through the process.
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-card-question">
+How do I get started with a project?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+Contact our team for a consultation and we will guide you through the process.
+</div>
+</div>
+
+<div class="faq-card">
+<div class="faq-card-question">
+How do I get started with a project?
+<span class="faq-card-arrow">▼</span>
+</div>
+<div class="faq-card-answer">
+Contact our team for a consultation and we will guide you through the process.
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+
+const faqCards=document.querySelectorAll(".faq-card");
+
+faqCards.forEach(card=>{
+card.addEventListener("click",()=>{
+card.classList.toggle("active");
+});
+});
+
+</script>
+
+
+
+
+
+         <div class="home_form">
+            <div class="form_shape_maquee">
+               <img src="./images/green-leaf-marquee.png" alt="">
+               <img src="./images/green-leaf-marquee.png" alt="">
+            </div>
+         </div>
+      </main>
+      <script>
+         function scrollGallery(direction){
+             const viewport = document.getElementById('galleryViewport');
+             const card = document.querySelector('.card');
+             const gap = 30;
+             const scrollAmount = card.offsetWidth + gap;
+         
+             viewport.scrollBy({
+                 left: scrollAmount * direction,
+                 behavior: 'smooth'
+             });
+         }
+      </script>
+
+
+    
+
+
+
+
+
+      <!-- footer section -->
+      <footer>
+         <div class="footer_container">
+            <!-- Top Row: Text + Contact Info -->
+            <div class="footer_row footer_top">
+               <div class="footer_text">
+                  <p>Nature has been quietly absent from spaces. It is now often treated as an afterthought rather than an essential part of design. But at Gamlaa, we believe that truly great spaces don't just look good, <span class="highlight">they feel good too!</span></p>
+               </div>
+               <div class="footer_contact_info">
+                  <div class="f_info">
+                     <img src="./images/loc-green.png" alt="">
+                     <div>
+                        <p>Headquarters - Jyothi Flora, Phase 2, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
+                     </div>
+                  </div>
+                  <div class="f_info">
+                     <img src="./images/mail-icon.png" alt="">
+                     <p>contact@gamlaa.com</p>
+                  </div>
+                  <div class="f_info">
+                     <img src="./images/call-icon.png" alt="">
+                     <p>+91 9391966078</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Middle Row: Logo + Social Icons -->
+            <div class="footer_row footer_middle">
+               <div class="footer_logo">
+                  <img src="./images/footer-logo.png" alt="Gamlaa">
+                  <a href="" class="footer_contact_btn">Contact Us</a>
+               </div>
+               <div class="footer_social">
+                  <a href="" class="social_icon">
+                  <img src="./images/tweet.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/yt.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/whatsapp.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/tele.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/linked.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/fb.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/insta.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <!-- Bottom Row: Line + Menu -->
+            <div class="footer_row footer_bottom">
+               <div class="footer_line"></div>
+               <nav class="footer_nav">
+                  <a href="">Who we are</a>
+                  <a href="">Our Solutions</a>
+                  <a href="">Who we serve</a>
+                  <a href="">Design Inspiration</a>
+                  <a href="">For Architects</a>
+                  <a href="">Resources</a>
+                  <a href="">Experience Center</a>
+               </nav>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+     
+      <script>
+         // const mediaQueryList = window.matchMedia("(max-width: 768px)");
+         
+         if (window.innerWidth <= 768) { 
+             document.body.classList.add("mobile_res");
+             document.body.classList.remove("desktop_site");
+         } else {
+             document.body.classList.remove("mobile_res");
+             document.body.classList.add("desktop_site");
+         }
+         
+         
+         gsap.registerPlugin(ScrollTrigger, SplitText, MorphSVGPlugin);
+         
+         
+         
+         gsap.set('.mobile_res header .head_menu nav', {
+             right: "-100%"
+         });
+         
+         
+         gsap.set('.mobile_res header .head_menu nav a', {
+             x: 30,
+             autoAlpha: 0,
+         });
+         
+         
+         const menuTl = gsap.timeline({ paused: true, reversed: true });
+         
+         
+         menuTl.to('.mobile_res header .head_menu nav', {
+             right: 0,
+             duration: 0.6,
+             ease: "expo.inOut",
+             overwrite: "auto"
+         })
+             
+         .to('.mobile_res header .head_menu nav a', {
+             x: 0,
+             autoAlpha: 1,
+             duration: 0.4,
+             ease: "circ.inOut",
+             stagger: 0.08,
+             overwrite: "auto"
+             }, "-=0.2");
+             
+             $('.mobile_res header .mb_menu_btn.ham_btn').on('click', function () {
+             if (menuTl.reversed()) {
+                 menuTl.play();
+             } else {
+                 menuTl.reverse();
+             }
+         });
+         
+         $('.mobile_res header .mb_menu_btn.close_menu').on('click', function () {
+             menuTl.reverse();
+         });
+         
+         
+         gsap.set('.desktop_site header .head_menu a', {
+             y: 40,
+             opacity: 0,
+         });
+         
+         gsap.set('header .head_logg', {
+             scale: 0.2,
+             opacity: 0,
+         });
+         
+         gsap.to('header .head_logg', {
+             scale: 1,
+             opacity: 1,
+             duration: 0.6,
+             ease: "back.out(1.7)",
+         });
+         
+         
+         gsap.to('.desktop_site header .head_menu a', {
+             y: 0,
+             opacity: 1,
+             duration: 0.6,
+             stagger: 0.1,
+             ease: "back.out(1.7)",
+         });
+         
+         
+         
+let bannerH2 = new SplitText('.top_banner .banner_content h2', {
+    type: "words"
+});
+
+let bannerP = new SplitText('.top_banner .banner_content p', {
+    type: "words"
+});
+         
+         let aboutH2 = new SplitText('.about h2', {
+             type: "words"
+         });
+         
+         let inspireImg = document.querySelectorAll('.inspire_tiles img');
+         
+         
+         gsap.fromTo('header.open_menu .head_menu nav', {
+             x: -100,
+             opacity: 0,
+         },{
+             x: 0,
+             opacity: 1,
+             duration: 0.3,
+         });
+         
+         
+         gsap.fromTo('header.open_menu .head_menu nav a', {
+             y: 40,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.3,
+             stagger: 0.15,
+         });
+         
+         
+         gsap.set('.top_banner .banner_content h2', {
+             opacity: 1,
+         });
+         
+gsap.set(bannerH2.words,{
+    y: 40,
+    opacity: 0,
+});
+
+gsap.set(bannerP.words,{
+    y: 30,
+    opacity: 0,
+});
+
+gsap.timeline()
+.to(bannerH2.words, {
+    y: 0,
+    opacity: 1,
+    duration: 0.4,
+    stagger: 0.1
+})
+.to(bannerP.words, {
+    y: 0,
+    opacity: 1,
+    duration: 0.3,
+    stagger: 0.05
+}, "-=0.2");
+
+       
+        
+         
+       
+         
+         const formTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: '.home_form',
+                 start: 'top 80%',
+                 toggleActions: "play none none reverse"
+             }
+         });
+         
+         const formH2 = new SplitText('.home_form h2', {
+             type: 'words',
+         })
+         
+         formTl.from(formH2.words, {
+             y: 40,
+             opacity: 0,
+             duration: 0.4,
+             stagger: 0.15,
+         });
+         
+         const footerTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: 'footer',
+                 start: "top 80%",
+                 toggleActions: "play none none reverse",
+             }
+         });
+         
+         const footerText = new SplitText('.footer_text p', {
+             type: 'lines',
+         });
+         
+         footerTl.fromTo(footerText.lines, {
+             y: 20, 
+             opacity: 0,
+         },{
+             y: 0, 
+             opacity: 1, 
+             stagger: 0.03, 
+             duration: 0.4, 
+             ease: "power2.out",
+         })
+         
+         .fromTo('.footer_contact_info .f_info', {
+             x: 20, 
+             opacity: 0,
+         },{
+             x: 0, 
+             opacity: 1, 
+             stagger: 0.05, 
+             duration: 0.3, 
+             ease: "power2.out",
+         }, "-=0.3")
+         
+         .fromTo('.footer_logo img', {
+             y: 30,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.4,
+             ease: "power2.out",
+         }, "-=0.2")
+         
+         .fromTo('.footer_logo .footer_contact_btn', {
+             y: 15,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.3,
+             ease: "power2.out",
+         }, "-=0.2")
+         
+         .fromTo('.footer_social .social_icon', {
+             y: 15, 
+             opacity: 0,
+         },{
+             y: 0, 
+             opacity: 1, 
+             stagger: 0.03, 
+             duration: 0.25, 
+             ease: "power2.out",
+         }, "-=0.2")
+         
+         .fromTo('.footer_line', {
+             scaleX: 0,
+             transformOrigin: "left center",
+         },{
+             scaleX: 1,
+             duration: 0.5,
+             ease: "power2.out",
+         }, "-=0.15")
+         
+         .fromTo('.footer_nav a', {
+             y: 10, 
+             opacity: 0,
+         },{
+             y: 0, 
+             opacity: 1, 
+             stagger: 0.03, 
+             duration: 0.25, 
+             ease: "power2.out",
+         }, "-=0.3");
+
+
+         /* GLOBAL FIX */
+         ScrollTrigger.config({ limitCallbacks: true });
+
+         /* BLOG SECTION */
+         let blogHeading = new SplitText('.blog-section .blog-header h1', { type: "words" });
+
+         gsap.set(blogHeading.words, { y: 40, opacity: 0 });
+         gsap.set('.blog-section .blog-header p', { y: 20, opacity: 0 });
+         gsap.set('.blog-section .blog-card', { y: 60, opacity: 0 });
+
+         const blogTl = gsap.timeline({ paused: true });
+
+         blogTl
+         .to(blogHeading.words, { y: 0, opacity: 1, stagger: 0.05, duration: 0.3 })
+         .to('.blog-section .blog-header p', { y: 0, opacity: 1, duration: 0.25 }, "-=0.15")
+         .to('.blog-section .blog-card', { y: 0, opacity: 1, stagger: 0.08, duration: 0.35 }, "-=0.15");
+
+         ScrollTrigger.create({
+             trigger: '.blog-section',
+             start: 'top 85%',
+             once: true,
+             onEnter: () => blogTl.play()
+         });
+
+
+         /* RESOURCE SECTION */
+         let resourceHeading = new SplitText('.resource-header h1', { type: "words" });
+
+         gsap.set(resourceHeading.words, { y: 40, opacity: 0 });
+         gsap.set('.resource-header p', { y: 20, opacity: 0 });
+         gsap.set('.resource-card', { y: 60, opacity: 0 });
+
+         const resourceTl = gsap.timeline({ paused: true });
+
+         resourceTl
+         .to(resourceHeading.words, { y: 0, opacity: 1, stagger: 0.05, duration: 0.3 })
+         .to('.resource-header p', { y: 0, opacity: 1, duration: 0.25 }, "-=0.15")
+         .to('.resource-card', { y: 0, opacity: 1, stagger: 0.08, duration: 0.35 }, "-=0.15");
+
+         ScrollTrigger.create({
+             trigger: '.resource-section',
+             start: 'top 85%',
+             once: true,
+             onEnter: () => resourceTl.play()
+         });
+
+
+         /* GUIDE SECTION */
+         let guideHeading = new SplitText('.guide-header h1', { type: "words" });
+
+         gsap.set(guideHeading.words, { y: 40, opacity: 0 });
+         gsap.set('.guide-header p', { y: 20, opacity: 0 });
+         gsap.set('.guide-card', { y: 60, opacity: 0 });
+
+         const guideTl = gsap.timeline({ paused: true });
+
+         guideTl
+         .to(guideHeading.words, { y: 0, opacity: 1, stagger: 0.05, duration: 0.3 })
+         .to('.guide-header p', { y: 0, opacity: 1, duration: 0.25 }, "-=0.15")
+         .to('.guide-card', { y: 0, opacity: 1, stagger: 0.08, duration: 0.35 }, "-=0.15");
+
+         ScrollTrigger.create({
+             trigger: '.guide-container',
+             start: 'top 85%',
+             once: true,
+             onEnter: () => guideTl.play()
+         });
+
+
+         /* NEWS SECTION */
+         let newsHeading = new SplitText('.news-title', { type: "words" });
+
+         gsap.set(newsHeading.words, { y: 40, opacity: 0 });
+         gsap.set('.news-card', { y: 60, opacity: 0 });
+
+         const newsTl = gsap.timeline({ paused: true });
+
+         newsTl
+         .to(newsHeading.words, { y: 0, opacity: 1, stagger: 0.05, duration: 0.3 })
+         .to('.news-card', { y: 0, opacity: 1, stagger: 0.08, duration: 0.35 }, "-=0.15");
+
+         ScrollTrigger.create({
+             trigger: '.news-container',
+             start: 'top 85%',
+             once: true,
+             onEnter: () => newsTl.play()
+         });
+
+
+         /* FAQ SECTION */
+         let faqHeading = new SplitText('.faq-title', { type: "words" });
+
+         gsap.set(faqHeading.words, { y: 40, opacity: 0 });
+         gsap.set('.faq-card', { y: 40, opacity: 0 });
+
+         const faqTl = gsap.timeline({ paused: true });
+
+         faqTl
+         .to(faqHeading.words, { y: 0, opacity: 1, stagger: 0.05, duration: 0.3 })
+         .to('.faq-card', { y: 0, opacity: 1, stagger: 0.06, duration: 0.3 }, "-=0.15");
+
+         ScrollTrigger.create({
+             trigger: '.faq-container',
+             start: 'top 85%',
+             once: true,
+             onEnter: () => faqTl.play()
+         });
+      </script>
+   </body>
+</html>

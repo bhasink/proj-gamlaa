@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gamlaa</title>
+      <link rel="stylesheet" href="./css.css?a=26">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+      <style>
+         .top_banner p{
+         color: #ffffff;
+         font-family: 'Montserrat', sans-serif;
+         font-size: 1.4vw;
+         }
+         .top_banner h2{
+         line-height: 0.9 !important;
+         }
+
+         
+         /* Global typography structure (fix SplitText font inheritance) */
+         body {
+             font-family: "Montserrat", sans-serif;
+         }
+
+         h1, h2, h3 {
+        font-family: albra-regular  !important;
+        font-weight: 400;
+        }
+
+         /* Ensure GSAP SplitText wrappers inherit heading font */
+         .split-line,
+         .split-word,
+         .split-char {
+             font-family: inherit;
+         }
+         
+         /* Override css.css div selector conflict (without editing css.css) */
+         h1 div,
+         h2 div,
+         h3 div,
+         h1 span,
+         h2 span,
+         h3 span {
+             font-family: inherit !important;
+         }
+      </style>
+   </head>
+   <body class="homepage">
+      <header>
+         <a href="" class="head_logg">
+         <img src="./images/footer-logo.png" alt="" class="white-logo">
+         <img src="./images/gamla-black-logo.png" alt="" class="black-logo">
+         </a>
+         <div class="head_menu">
+            <nav>
+               <a href="">Who we are</a>
+               <a href="">Our Solutions</a>
+               <a href="">Our Work</a>
+               <a href="">What Inspires Us</a>
+               <a href="">For Architects</a>
+               <a href="">Resources</a>
+               <a href="">Experience Center</a>
+            </nav>
+            <a href="" class="contact_btn">
+            Contact Us
+            </a>
+            <div class="mb_menu_btn ham_btn">
+               <span class="line1"></span>
+               <span class="line2"></span>
+               <span class="line3"></span>
+            </div>
+         </div>
+      </header>
+      <main id="home">
+         <div class="top_banner">
+            <img src="./images/career-banner.png?a=1" alt="" class="for-dsk">
+            <img src="./images/banner-mb.png" alt="" class="for-mb">
+            <div class="banner_content">
+               <h2>Design. Innovate.<br>
+                  Impact
+               </h2>
+               <br> <br>
+               <p>Be part of India's first bioscaping movement</p>
+            </div>
+         </div>
+         <!-- <section class="why_join">
+            <div class="why_join_inner">
+            
+                <div class="why_left">
+                    <h2>Why Join Us?</h2>
+            
+                    <ul class="why_list">
+                        <li>
+                            <span class="icon"><img src="./images/icon-growth.png" alt=""></span>
+                            <p>GROWTH-MINDED</p>
+                        </li>
+                        <li>
+                            <span class="icon"><img src="./images/icon-design.png" alt=""></span>
+                            <p>DESIGN-FIRST</p>
+                        </li>
+                        <li>
+                            <span class="icon"><img src="./images/icon-sustainable.png" alt=""></span>
+                            <p>SUSTAINABLE</p>
+                        </li>
+                        <li>
+                            <span class="icon"><img src="./images/icon-impact.png" alt=""></span>
+                            <p>CREATE IMPACT</p>
+                        </li>
+                        <li>
+                            <span class="icon"><img src="./images/icon-collaborative.png" alt=""></span>
+                            <p>COLLABORATIVE CULTURE</p>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="why_right">
+                    <img src="./images/why_join_banner.png" alt="Why Join Us">
+                </div>
+            
+            </div>
+            </section> -->
+         <section class="section-one">
+            <div class="why-box">
+               <!-- BACKGROUND SHAPE IMAGE -->
+               <img src="./images/shape.png" alt="Why Join Us Shape" class="bg-shape">
+               <div class="why-content">
+                  <div class="why-inner">
+                     <h2>Why Join Us?</h2>
+                     <ul class="why-list">
+                        <li class="why-item">
+                           <img src="./images/icon1.png" alt="Growth Minded">
+                           GROWTH-MINDED
+                        </li>
+                        <li class="why-item">
+                           <img src="./images/icon2.png" alt="Design First">
+                           DESIGN-FIRST
+                        </li>
+                        <li class="why-item">
+                           <img src="./images/icon3.png" alt="Sustainable">
+                           SUSTAINABLE
+                        </li>
+                        <li class="why-item">
+                           <img src="./images/icon4.png" alt="Create Impact">
+                           CREATE IMPACT
+                        </li>
+                        <li class="why-item">
+                           <img src="./images/icon5.png" alt="Collaborative Culture">
+                           COLLABORATIVE CULTURE
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- open-section -->
+         <section class="open-positions">
+            <h1>Open Positions</h1>
+            <div class="job-row">
+               <div class="job-left">
+                  <span class="job-id">01</span>
+                  <div class="job-text">
+                     <h3>Head of Marketing</h3>
+                     <p>Lorem ipsum, uk</p>
+                  </div>
+               </div>
+               <button class="apply-btn">Apply Now →</button>
+            </div>
+            <div class="job-row">
+               <div class="job-left">
+                  <span class="job-id">02</span>
+                  <div class="job-text">
+                     <h3>Product Manager</h3>
+                     <p>Lorem ipsum, uk</p>
+                  </div>
+               </div>
+               <button class="apply-btn">Apply Now →</button>
+            </div>
+            <div class="job-row">
+               <div class="job-left">
+                  <span class="job-id">03</span>
+                  <div class="job-text">
+                     <h3>Software Developer</h3>
+                     <p>Lorem ipsum, uk</p>
+                  </div>
+               </div>
+               <button class="apply-btn">Apply Now →</button>
+            </div>
+         </section>
+         <!-- gamla culture -->
+         <section class="main-culture-gamlaa">
+            <section class="culture">
+               <div class="container-culture">
+                  <div class="text-content">
+                     <h1>Culture <br> at Gamlaa</h1>
+                     <p>
+                        At Gamlaa, culture is built on craft, curiosity, and quiet excellence. We value thoughtful design, collaborative thinking, and an environment where ideas are refined with intention.
+                         It is a space where creativity meets discipline, and every detail is shaped with care and purpose.
+                     </p>
+                  </div>
+                  <div class="image-content">
+                     <img src="./images/timeline-3.png" alt="Team Working">
+                  </div>
+               </div>
+            </section>
+            <!-- end gamla culture-->
+            <!-- team gallery -->
+            <section class="container-gallery">
+               <h1>Team Gallery</h1>
+               <div class="gallery-viewport" id="galleryViewport">
+                  <div class="gallery">
+                     <div class="card">
+                        <img src="./images/gallery-img1.jpg">
+                     </div>
+                     <div class="card">
+                        <img src="./images/gallery-img2.jpg">
+                     </div>
+                     <div class="card">
+                        <img src="./images/gallery-img3.jpg">
+                     </div>
+                     <div class="card">
+                        <img src="./images/gallery-img4.jpg">
+                     </div>
+                     <div class="card">
+                        <img src="./images/gallery-img5.jpg">
+                     </div>
+                  </div>
+               </div>
+               <div class="arrow-wrapper">
+                  <button class="arrow-btn" type="button" onclick="scrollGallery(-1)" style="opacity: 1;">
+                     <svg fill="none" viewBox="0 0 24 24">
+                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2"/>
+                     </svg>
+                  </button>
+                  <button class="arrow-btn" type="button" onclick="scrollGallery(1)" style="opacity: 1;">
+                     <svg fill="none" viewBox="0 0 24 24">
+                        <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2"/>
+                     </svg>
+                  </button>
+               </div>
+            </section>
+         </section>
+         <!-- green thinker -->
+         <section class="hero">
+            <div class="hero-content">
+               <h1>We're always looking<br>for green thinkers</h1>
+               <p>
+                  We're always looking for green thinkers. <br>
+                  Send us your CV and tell us what excites you.
+               </p>
+               <a href="#" class="btn">Send Message</a>
+            </div>
+         </section>
+         <!-- join-our-team-section -->
+         <section class="page-wrapper join-our-team">
+            <div class="form-container">
+               <h1 class="main-title">Join Our Team</h1>
+               <p class="subtitle-text">
+                  Want to inquire or speak to someone about your desired role? We’d love to chat!
+               </p>
+               <form class="custom-form">
+                  <div class="form-row">
+                     <div class="form-group">
+                        <label class="form-label">First name</label>
+                        <input type="text" class="form-input" placeholder="First name">
+                     </div>
+                     <div class="form-group">
+                        <label class="form-label">Last name</label>
+                        <input type="text" class="form-input" placeholder="Last name">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="form-label">Email</label>
+                     <input type="email" class="form-input" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                     <label class="form-label">Phone number</label>
+                     <div class="phone-combined">
+                        <select class="phone-code">
+                           <option>IN</option>
+                           <option>US</option>
+                           <option>UK</option>
+                        </select>
+                        <input type="tel" class="phone-number" placeholder="">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="form-label">Message</label>
+                     <textarea class="form-textarea" placeholder="Leave us a message.."></textarea>
+                  </div>
+                  <button type="submit" class="submit-button">Send Message</button>
+               </form>
+            </div>
+         </section>
+         <!-- last-section -->
+         <div class="blog-section">
+            <div class="blog-header">
+               <h1>Blogs</h1>
+               <p>Lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum</p>
+            </div>
+            <div class="slider-wrapper">
+               <div class="blog-slider" id="slider">
+                  <div class="blog-card">
+                     <img src="./images/blog1.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+                  <div class="blog-card">
+                     <img src="./images/blog2.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+                  <div class="blog-card">
+                     <img src="./images/blog3.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+                  <div class="blog-card">
+                     <img src="./images/blog1.jpg">
+                     <h4>Lorem ipsum</h4>
+                     <p>Lorem ipsum lorem ipsum lorem</p>
+                     <a href="#">Read Blog →</a>
+                  </div>
+               </div>
+               <div class="scroll-buttons">
+                  <button id="prev">&#10094;</button>
+                  <button id="next">&#10095;</button>
+               </div>
+            </div>
+         </div>
+
+
+<div id='khembedjobs'></div>
+
+
+         <script>
+            const slider = document.getElementById("slider");
+            const prev = document.getElementById("prev");
+            const next = document.getElementById("next");
+            const gap = 24;
+            
+            let cards = Array.from(slider.children);
+            
+            /* CLONE FOR BOTH SIDES */
+            cards.forEach(card => {
+                slider.appendChild(card.cloneNode(true));
+                slider.insertBefore(card.cloneNode(true), slider.firstChild);
+            });
+            
+            let index = cards.length;
+            let cardWidth = cards[0].offsetWidth + gap;
+            
+            /* INITIAL POSITION */
+            slider.style.transform = `translateX(-${index * cardWidth}px)`;
+            
+            /* BLINK EFFECT */
+            function blink(btn) {
+                btn.classList.add("active");
+                setTimeout(() => btn.classList.remove("active"), 150);
+            }
+            
+            function move(dir, btn) {
+                blink(btn);
+                slider.style.transition = "transform 0.45s ease";
+                index += dir;
+                slider.style.transform = `translateX(-${index * cardWidth}px)`;
+            
+                setTimeout(() => {
+                    slider.style.transition = "none";
+            
+                    if (index >= cards.length * 2) {
+                        index = cards.length;
+                    }
+                    if (index <= 0) {
+                        index = cards.length;
+                    }
+            
+                    slider.style.transform = `translateX(-${index * cardWidth}px)`;
+                }, 460);
+            }
+            
+            next.onclick = () => move(1, next);
+            prev.onclick = () => move(-1, prev);
+         </script>
+         <!--  -->
+         <div class="home_form">
+            <div class="form_shape_maquee">
+               <img src="./images/green-leaf-marquee.png" alt="">
+               <img src="./images/green-leaf-marquee.png" alt="">
+            </div>
+         </div>
+      </main>
+      <script>
+         function scrollGallery(direction){
+             const viewport = document.getElementById('galleryViewport');
+             const card = document.querySelector('.card');
+             const gap = 30;
+             const scrollAmount = card.offsetWidth + gap;
+         
+             viewport.scrollBy({
+                 left: scrollAmount * direction,
+                 behavior: 'smooth'
+             });
+         }
+      </script>
+
+
+      <!-- footer section -->
+      <footer>
+         <div class="footer_container">
+            <!-- Top Row: Text + Contact Info -->
+            <div class="footer_row footer_top">
+               <div class="footer_text">
+                  <p>Nature has been quietly absent from spaces. It is now often treated as an afterthought rather than an essential part of design. But at Gamlaa, we believe that truly great spaces don't just look good, <span class="highlight">they feel good too!</span></p>
+               </div>
+               <div class="footer_contact_info">
+                  <div class="f_info">
+                     <img src="./images/loc-green.png" alt="">
+                     <div>
+                        <p>Headquarters - Jyothi Flora, Phase 2, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
+                     </div>
+                  </div>
+                  <div class="f_info">
+                     <img src="./images/mail-icon.png" alt="">
+                     <p>contact@gamlaa.com</p>
+                  </div>
+                  <div class="f_info">
+                     <img src="./images/call-icon.png" alt="">
+                     <p>+91 9391966078</p>
+                  </div>
+               </div>
+            </div>
+            <!-- Middle Row: Logo + Social Icons -->
+            <div class="footer_row footer_middle">
+               <div class="footer_logo">
+                  <img src="./images/footer-logo.png" alt="Gamlaa">
+                  <a href="" class="footer_contact_btn">Contact Us</a>
+               </div>
+               <div class="footer_social">
+                  <a href="" class="social_icon">
+                  <img src="./images/tweet.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/yt.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/whatsapp.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/tele.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/linked.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/fb.png" alt="">
+                  </a>
+                  <a href="" class="social_icon">
+                  <img src="./images/insta.png" alt="">
+                  </a>
+               </div>
+            </div>
+            <!-- Bottom Row: Line + Menu -->
+            <div class="footer_row footer_bottom">
+               <div class="footer_line"></div>
+               <nav class="footer_nav">
+                  <a href="">Who we are</a>
+                  <a href="">Our Solutions</a>
+                  <a href="">Who we serve</a>
+                  <a href="">Design Inspiration</a>
+                  <a href="">For Architects</a>
+                  <a href="">Resources</a>
+                  <a href="">Experience Center</a>
+               </nav>
+            </div>
+         </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+      <script>
+        
+         
+         $(window).scroll(function() {
+             var scroll = $(window).scrollTop();
+         
+             if (scroll >= 200) {
+                 $("header").addClass("darkHeader");
+             } else {
+                 $("header").removeClass("darkHeader");
+             }
+         });
+         
+         
+         let lastScrollTop = 0;
+         
+         window.addEventListener('scroll', function() {
+         
+             let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+         
+             if (currentScroll < lastScrollTop) {
+                 document.body.classList.add('scrolling-up');
+                 document.body.classList.remove('scrolling-down');
+             } else {
+                 document.body.classList.remove('scrolling-up');
+                 document.body.classList.add('scrolling-down');
+             }
+         
+             lastScrollTop = currentScroll;
+         
+         });
+         
+         
+         
+         $('.mb_menu_btn').click(function() {
+         
+             $('header').toggleClass('open_menu');
+         
+             $(this).toggleClass('close_menu');
+             $(this).toggleClass('ham_btn');
+             
+         });
+         
+         
+         const lenis = new Lenis({
+             lerp: 0.06, 
+             wheelMultiplier: 1, 
+         });
+         
+         function raf(time) {
+             lenis.raf(time);
+             requestAnimationFrame(raf);
+         }
+         requestAnimationFrame(raf);
+         
+         
+         
+         
+      </script>
+      <script>
+         // const mediaQueryList = window.matchMedia("(max-width: 768px)");
+         
+         if (window.innerWidth <= 768) { 
+             document.body.classList.add("mobile_res");
+             document.body.classList.remove("desktop_site");
+         } else {
+             document.body.classList.remove("mobile_res");
+             document.body.classList.add("desktop_site");
+         }
+         
+         
+         gsap.registerPlugin(ScrollTrigger, SplitText);
+         
+         
+         
+         gsap.set('.mobile_res header .head_menu nav', {
+             right: "-100%"
+         });
+         
+         
+         gsap.set('.mobile_res header .head_menu nav a', {
+             x: 30,
+             autoAlpha: 0,
+         });
+         
+         
+         const menuTl = gsap.timeline({ paused: true, reversed: true });
+         
+         
+         menuTl.to('.mobile_res header .head_menu nav', {
+             right: 0,
+             duration: 0.6,
+             ease: "expo.inOut",
+             overwrite: "auto"
+         })
+             
+         .to('.mobile_res header .head_menu nav a', {
+             x: 0,
+             autoAlpha: 1,
+             duration: 0.4,
+             ease: "circ.inOut",
+             stagger: 0.08,
+             overwrite: "auto"
+             }, "-=0.2");
+             
+             $('.mobile_res header .mb_menu_btn.ham_btn').on('click', function () {
+             if (menuTl.reversed()) {
+                 menuTl.play();
+             } else {
+                 menuTl.reverse();
+             }
+         });
+         
+         $('.mobile_res header .mb_menu_btn.close_menu').on('click', function () {
+             menuTl.reverse();
+         });
+         
+         
+         gsap.set('.desktop_site header .head_menu a', {
+             y: 40,
+             opacity: 0,
+         });
+         
+         gsap.set('header .head_logg', {
+             scale: 0.2,
+             opacity: 0,
+         });
+         
+         gsap.to('header .head_logg', {
+             scale: 1,
+             opacity: 1,
+             duration: 0.6,
+             ease: "back.out(1.7)",
+         });
+         
+         
+         gsap.to('.desktop_site header .head_menu a', {
+             y: 0,
+             opacity: 1,
+             duration: 0.6,
+             stagger: 0.1,
+             ease: "back.out(1.7)",
+         });
+         
+         
+         
+         let bannerH2 = new SplitText('.top_banner .banner_content h2', {
+             type: "words"
+         });
+         let bannerP = new SplitText('.top_banner .banner_content p', {
+             type: "words"
+         });
+         
+         let aboutH2 = new SplitText('.about h2', {
+             type: "words"
+         });
+         
+
+let whyH2 = new SplitText('.why-box h2', {
+    type: "words"
+});
+let inspireImg = document.querySelectorAll('.inspire_tiles img');
+
+let openPosH1 = new SplitText('.open-positions h1', {
+    type: "words"
+});
+
+let cultureH1 = new SplitText('.culture .text-content h1', {
+    type: "words"
+});
+
+let galleryH1 = new SplitText('.container-gallery h1', {
+    type: "words"
+});
+
+let heroH1 = new SplitText('.hero .hero-content h1', {
+    type: "words"
+});
+
+let heroP = new SplitText('.hero .hero-content p', {
+    type: "lines"
+});
+
+let joinTeamH1 = new SplitText('.join-our-team .main-title', {
+    type: "words"
+});
+
+let joinTeamSub = new SplitText('.join-our-team .subtitle-text', {
+    type: "lines"
+});
+
+let blogH1 = new SplitText('.blog-section .blog-header h1', {
+    type: "words"
+});
+
+let blogP = new SplitText('.blog-section .blog-header p', {
+    type: "lines"
+});
+         
+         
+         gsap.fromTo('header.open_menu .head_menu nav', {
+             x: -100,
+             opacity: 0,
+         },{
+             x: 0,
+             opacity: 1,
+             duration: 0.3,
+         });
+         
+         
+         gsap.fromTo('header.open_menu .head_menu nav a', {
+             y: 40,
+             opacity: 0,
+         },{
+             y: 0,
+             opacity: 1,
+             duration: 0.3,
+             stagger: 0.15,
+         });
+         
+         
+         gsap.set('.top_banner .banner_content h2', {
+             opacity: 1,
+         });
+         
+         gsap.set(bannerH2.words,{
+             y: 40,
+             opacity: 0,
+         });
+         gsap.set('.top_banner .banner_content p', {
+             opacity: 1,
+         });
+         gsap.set(bannerP.words,{
+             y: 40,
+             opacity: 0,
+         });
+         
+         gsap.to(bannerH2.words, {
+             y: 0,
+             opacity: 1,
+             duration: 0.4,
+             stagger: 0.2
+         });
+gsap.to(bannerP.words, {
+    y: 0,
+    opacity: 1,
+    duration: 0.3,
+    stagger: 0.1,
+   //  delay: 0.3,
+    ease: "back.out(1.7)"
+});
+
+        /* WHY BOX SECTION ANIMATION */
+        const whyTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.why-box',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.set(whyH2.words, {
+            y: 40,
+            opacity: 0,
+        });
+
+        whyTl
+        .from('.why-box .bg-shape', {
+            scale: 0.8,
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out"
+        })
+        .to(whyH2.words, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        }, "-=0.3")
+        .from('.why-box .why-item', {
+            y: 40,
+            opacity: 0,
+            duration: 0.4,
+            stagger: 0.1,
+            ease: "power2.out"
+        }, "-=0.2");
+
+        /* OPEN POSITIONS SECTION ANIMATION */
+        const openPosTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.open-positions',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.set(openPosH1.words, {
+            y: 40,
+            opacity: 0,
+        });
+
+        openPosTl
+        .to(openPosH1.words, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        })
+        .from('.open-positions .job-row', {
+            y: 40,
+            opacity: 0,
+            duration: 0.4,
+            stagger: 0.15,
+            ease: "power2.out"
+        }, "-=0.2")
+        .from('.open-positions .apply-btn', {
+            x: 30,
+            opacity: 0,
+            duration: 0.3,
+            stagger: 0.15,
+            ease: "power2.out"
+        }, "-=0.3");
+
+        /* MAIN CULTURE GAMLA SECTION ANIMATION */
+        const cultureTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.main-culture-gamlaa',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+       gsap.set(cultureH1.words, {
+    y: 50,
+    opacity: 0,
+});
+
+cultureTl
+.to(cultureH1.words, {
+    y: 0,
+    opacity: 1,
+    duration: 0.6,
+    stagger: 0.08,
+    ease: "power3.out"
+})
+.from('.culture .text-content p', {
+    y: 40,
+    opacity: 0,
+    duration: 0.6,
+    ease: "power3.out"
+}, "-=0.4")
+.from('.culture .image-content img', {
+    x: 80,
+    opacity: 0,
+    duration: 0.9,
+    ease: "power3.out"
+}, "-=0.5");
+
+
+        /* CONTAINER GALLERY SECTION ANIMATION */
+        const galleryTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.container-gallery',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.set(galleryH1.words, {
+            y: 40,
+            opacity: 0,
+        });
+
+        galleryTl
+        .to(galleryH1.words, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        })
+        .from('.container-gallery .card', {
+            y: 60,
+            opacity: 0,
+            duration: 0.4,
+            stagger: 0.12,
+            ease: "power2.out"
+        }, "-=0.2")
+        .from('.arrow-wrapper .arrow-btn', {
+            scale: 0.85,
+            opacity: 0,
+            duration: 0.3,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        }, "-=0.2");
+
+        /* HERO SECTION ANIMATION */
+        const heroTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.hero',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.set(heroH1.words, {
+            y: 50,
+            opacity: 0,
+        });
+
+        gsap.set(heroP.lines, {
+            y: 40,
+            opacity: 0,
+        });
+
+        heroTl
+        .to(heroH1.words, {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        })
+        .to(heroP.lines, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.1,
+            ease: "power2.out"
+        }, "-=0.2")
+        .from('.hero .btn', {
+            scale: 0.8,
+            opacity: 0,
+            duration: 0.4,
+            ease: "back.out(1.7)"
+        }, "-=0.2");
+
+
+        /* JOIN OUR TEAM SECTION ANIMATION */
+        const joinTeamTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.join-our-team',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.set(joinTeamH1.words, {
+            y: 40,
+            opacity: 0,
+        });
+
+        gsap.set(joinTeamSub.lines, {
+            y: 30,
+            opacity: 0,
+        });
+
+        joinTeamTl
+        .to(joinTeamH1.words, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.08,
+            ease: "back.out(1.7)"
+        })
+        .to(joinTeamSub.lines, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.08,
+            ease: "power2.out"
+        }, "-=0.2")
+        .from('.join-our-team .form-group', {
+            y: 40,
+            opacity: 0,
+            duration: 0.4,
+            stagger: 0.08,
+            ease: "power2.out"
+        }, "-=0.2")
+        .from('.join-our-team .submit-button', {
+            y: 40,
+            autoAlpha: 0,
+            duration: 0.4,
+            ease: "power2.out",
+            immediateRender: false
+        }, "-=0.2");
+
+        /* BLOG SECTION ANIMATION */
+        const blogTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.blog-section',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.set(blogH1.words, {
+            y: 40,
+            opacity: 0,
+        });
+
+        gsap.set(blogP.lines, {
+            y: 30,
+            opacity: 0,
+        });
+
+        blogTl
+        .to(blogH1.words, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.08,
+            ease: "back.out(1.7)"
+        })
+        .to(blogP.lines, {
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            stagger: 0.06,
+            ease: "power2.out"
+        }, "-=0.2")
+        .from('.blog-section .blog-card', {
+            y: 60,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.12,
+            ease: "power2.out"
+        }, "-=0.3")
+        .from('.blog-section .scroll-buttons button', {
+            scale: 0.8,
+            opacity: 0,
+            duration: 0.3,
+            stagger: 0.1,
+            ease: "back.out(1.7)"
+        }, "-=0.3");
+         
+         
+                  
+       
+       
+         
+         
+         
+
+         
+         
+         
+         
+       
+         
+         const formTl = gsap.timeline({
+             scrollTrigger: {
+                 trigger: '.home_form',
+                 start: 'top 80%',
+                 toggleActions: "play none none none"
+             }
+         });
+         
+         const formH2 = new SplitText('.home_form h2', {
+             type: 'words',
+         })
+         
+         formTl.from(formH2.words, {
+             y: 40,
+             opacity: 0,
+             duration: 0.4,
+             stagger: 0.15,
+         });
+         
+         
+         
+       
+            const footerTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: 'footer',
+                    start: "top 80%",
+                    toggleActions: "play none none none",
+                }
+            });
+            
+            const footerText = new SplitText('.footer_text p', {
+                type: 'lines',
+            });
+
+
+            footerTl.fromTo(footerText.lines, {
+                y: 20, 
+                opacity: 0,
+            },{
+                y: 0, 
+                opacity: 1, 
+                stagger: 0.03, 
+                duration: 0.4, 
+                ease: "power2.out",
+            })
+
+            .fromTo('.footer_contact_info .f_info', {
+                x: 20, 
+                opacity: 0,
+            },{
+                x: 0, 
+                opacity: 1, 
+                stagger: 0.05, 
+                duration: 0.3, 
+                ease: "power2.out",
+            }, "-=0.3")
+
+            .fromTo('.footer_logo img', {
+                y: 30,
+                opacity: 0,
+            },{
+                y: 0,
+                opacity: 1,
+                duration: 0.4,
+                ease: "power2.out",
+            }, "-=0.2")
+
+            .fromTo('.footer_logo .footer_contact_btn', {
+                y: 15,
+                opacity: 0,
+            },{
+                y: 0,
+                opacity: 1,
+                duration: 0.3,
+                ease: "power2.out",
+            }, "-=0.2")
+
+            .fromTo('.footer_social .social_icon', {
+                y: 15, 
+                opacity: 0,
+            },{
+                y: 0, 
+                opacity: 1, 
+                stagger: 0.03, 
+                duration: 0.25, 
+                ease: "power2.out",
+            }, "-=0.2")
+
+            .fromTo('.footer_line', {
+                scaleX: 0,
+                transformOrigin: "left center",
+            },{
+                scaleX: 1,
+                duration: 0.5,
+                ease: "power2.out",
+            }, "-=0.15")
+
+            .fromTo('.footer_nav a', {
+                y: 10, 
+                opacity: 0,
+            },{
+                y: 0, 
+                opacity: 1, 
+                stagger: 0.03, 
+                duration: 0.25, 
+                ease: "power2.out",
+            }, "-=0.3");
+
+
+         
+         
+         
+         
+         
+         
+      </script>
+
+
+
+ <script>
+     window.khConfig =
+                            {
+                                identifier: 'b27be6a9-aef7-414c-aea3-4ec14f50ec13',domain: 'https://gamlaa.keka.com/careers/',targetContainer: '#khembedjobs'}</script><script src='https://gamlaa.keka.com/careers/api/embedjobs/js/b27be6a9-aef7-414c-aea3-4ec14f50ec13' defer></script>
+
+
+   </body>
+</html>

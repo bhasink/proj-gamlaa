@@ -1,0 +1,2534 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gamlaa</title>
+    <link rel="stylesheet" href="./css.css?a=31">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+
+  <style>
+        /* ================= BASE ================= */
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #ffffff;
+        }
+
+        main {
+            overflow: hidden;
+        }
+
+        /* ================= ABOUT SECTION ================= */
+
+      .about_section {
+    position: relative;
+    padding: 88px 0 120px;
+    background-color: #ffffff;
+    overflow: hidden; /* allow SVG to span full width cleanly */
+}
+/* About background SVG positioning */
+        .about_section > .about_bg_svg {
+          position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100vw;
+/* height: 420px; */
+pointer-events: none;
+z-index: 0;
+top: 100px;
+        }
+
+        .about_svg {
+            width: 100vw;
+            height: 100%;
+            display: block;
+        }
+
+.about_svg_path {
+    fill: none;
+    stroke: #9BC53D;
+    stroke-width: 14px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+        .about_container {
+          max-width: 1550px;
+        margin: 100px auto;
+        /* padding: 0px 48px; */
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: flex-start;
+        gap: 0px;
+        position: relative;
+        z-index: 2;
+        }
+
+        /* ================= TEXT ================= */
+
+        .about_content {
+        }
+
+        .about_content h2 {
+            font-size: 115px;
+            font-weight: 500;
+            color: #163f34;
+            margin-bottom: 5px;
+            letter-spacing: -0.03em;
+            font-family: albra-regular;
+
+        }
+
+        .about_content p {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            line-height: 1.4;
+            color: #2f4f46;
+            max-width: 520px;
+        }
+
+        /* ================= IMAGE ================= */
+
+        .about_image {
+            position: relative;
+            z-index: 3;
+        }
+
+        .about_image img {
+            width: 100%;
+            display: block;
+            border-radius: 36px;
+            /* transform: translateY(-6px); */
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1200px) {
+            .about_container {
+                gap: 72px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .about_container {
+                grid-template-columns: 1fr;
+                gap: 56px;
+            }
+
+            .about_content h2 {
+                font-size: 54px;
+            }
+
+            .about_section {
+                background-size:
+                    80% auto,
+                    70% auto;
+                background-position:
+                    -25% 80%,
+                    120% 78%;
+            }
+        }
+
+
+        /* ================= ABOUT STATS ================= */
+
+.about_stats_section {
+     /* padding: 0 0 120px; */
+    background: #ffffff;
+}
+
+.about_stats_container {
+    max-width: 1320px;
+    margin: 0 auto;
+    /* padding: 0 48px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+/* Stats item vertical rhythm for baseline consistency */
+.stat_item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.stat_item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 85px;
+    font-weight: 500;
+    color: #9BC53D;
+
+    /* FIX: prevent width jump while counting */
+    min-width: 260px;
+    display: inline-block;
+    text-align: left;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.stat_item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #163f34;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .about_stats_container {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+
+    .stat_item h3 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about_stats_container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .stat_item h3 {
+        font-size: 48px;
+    }
+}
+
+        @media (max-width: 600px) {
+            .about_section {
+                padding: 80px 0 120px;
+            }
+
+            .about_content h2 {
+                font-size: 40px;
+            }
+
+            .about_content p {
+                font-size: 16px;
+            }
+        }
+
+
+
+        /* ================= ABOUT VALUES ================= */
+/* ================= ABOUT VALUES (PIXEL MATCH) ================= */
+
+.about_values_section {
+    padding: 96px 0 140px;
+    background: #ffffff;
+}
+
+.about_values_container {
+    max-width: 1550px;
+    margin: 0 auto;
+    /* padding: 0 48px; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+}
+
+/* Card base */
+.value_card {
+    border-radius: 44px;
+    padding: 3em;
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Icon */
+.value_icon img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Heading */
+.value_card h3 {
+    font-family: albra-regular;
+    font-size: 40px;
+    font-weight: 500;
+    /* margin: 0 0 18px; */
+    letter-spacing: -0.01em;
+}
+
+/* Body text */
+.value_card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15.5px;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 360px;
+}
+
+/* Themes */
+.value_light {
+    background: #F6F1DF;
+    color: #163f34;
+}
+
+.value_green {
+    background: #AFC766;
+    color: #163f34;
+}
+
+.value_dark {
+    background: #183E34;
+    color: #ffffff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+    .about_values_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .about_values_container {
+        grid-template-columns: 1fr;
+    }
+
+    .about_values_section {
+        padding: 80px 0 120px;
+    }
+}
+
+
+/* ================= TEAM SECTION ================= */
+
+.team_section {
+    background: #F6F1DF;
+    padding: 140px 0 160px;
+
+    background-image: url('./images/leaf-pattern.svg');
+    background-repeat: repeat;
+    background-size: 240px;
+}
+
+/* Headings */
+.team_heading {
+    font-family: albra-regular;
+    font-size: 102px;
+    font-weight: 500;
+    color: #163f34;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners_heading {
+    margin-top: 50px;
+}
+
+/* Grid */
+.team_grid {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 48px;
+
+    display: grid;
+    gap: 80px 72px;
+}
+
+.core_team {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.partners_team {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 900px;
+}
+
+/* Card */
+.team_card {
+    text-align: left;
+}
+
+/* Image wrapper */
+.team_img_wrap {
+    width: 100%;
+    /* height: 360px; */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.team_img_wrap::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 260px;
+    /* background: #AFC766; */
+    border-radius: 120px 120px 0 0;
+    z-index: 1;
+}
+
+.team_img_wrap img {
+    position: relative;
+    z-index: 2;
+    /* max-height: 320px; */
+    object-fit: cover;
+}
+
+/* Name pill */
+.team_name {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 22px;
+    background: #163f34;
+    color: #ffffff;
+    border-radius: 24px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Role */
+.team_role {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #163f34;
+    /* max-width: 320px; */
+    margin-left: 1em;
+    font-family: 'Montserrat', sans-serif;
+
+    /* margin-right: auto; */
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+    .core_team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team_heading {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 600px) {
+    .core_team,
+    .partners_team {
+        grid-template-columns: 1fr;
+    }
+
+    .team_section {
+        padding: 100px 0 120px;
+    }
+
+    .partners_heading {
+        margin-top: 50px;
+    }
+}
+
+/* ================= TIMELINE (HORIZONTAL) ================= */
+
+ .timeline_section {
+    position: relative;
+    padding: 80px 0;
+    background: #ffffff;
+    overflow: hidden;
+
+    /* CRITICAL FIX */
+    isolation: isolate;
+}
+
+/* Background leaf */
+.timeline_bg_leaf {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 220px;
+    height: 520px;
+    opacity: 0.35;
+    z-index: 1;
+}
+
+/* Heading */
+.timeline_heading_wrap {
+       max-width: 1550px;
+    margin: 0 auto 50px;
+    /* padding-left: 120px; */
+}
+
+.timeline_heading_wrap h2 {
+    font-family: albra-regular;
+    font-size: 95px;
+    font-weight: 500;
+    color: #163f34;
+    line-height: 0.9;
+}
+
+/* Horizontal wrapper */
+.timeline_wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Track */
+.timeline_track {
+    display: flex;
+    width: max-content;
+}
+
+.timeline_slide {
+    width: 50vw;
+    padding-left: 120px;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+
+/* ✅ LAST SLIDE MUST BE WIDER */
+.timeline_slide:last-child {
+    width: 80vw;
+}
+
+.timeline_line {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.timeline_line.line_1 {
+    left: 18%;
+    top: 58%;
+    width: 420px;
+}
+
+.timeline_line.line_2 {
+    right: 6%;
+    top: 36%;
+    width: 380px;
+}
+
+/* Timeline card */
+.timeline_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.timeline_image {
+    max-width: 520px;
+}
+
+.timeline_item.reverse {
+    align-items: flex-end;
+    text-align: left;
+}
+
+/* Image */
+.timeline_image img {
+    width: 100%;
+    border-radius: 36px;
+    display: block;
+}
+
+/* Content */
+.timeline_content h3 {
+    font-size: 42px;
+    font-weight: 500;
+    color: #163f34;
+    margin: 0 0 6px;
+}
+
+.timeline_content h4 {
+    font-family: albra-regular;
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0 0 16px;
+    color: #163f34;
+}
+
+.timeline_content p {
+    font-size: 22px;
+    line-height: 1.4;
+    max-width: 480px;
+    color: #2f4f46;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* ================= OUR CLIENTS ================= */
+
+/* Disable text & image selection while dragging */
+.clients_section,
+.clients_section * {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.clients_section {
+    padding: 200px 0 220px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.clients_heading {
+    font-family: albra-regular;
+    font-size: 96px;
+    font-weight: 500;
+    color: #6b6b6b;
+    margin-bottom: 100px;
+}
+
+/* Slider container */
+.clients_slider_wrap {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Slider viewport */
+.clients_slider {
+    width: 100%;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.clients_slider:active {
+    cursor: grabbing;
+}
+
+/* Track */
+.clients_track {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    width: max-content;
+    will-change: transform;
+}
+
+/* Logos */
+.clients_track img {
+    height: 75px;
+    /* opacity: 0.45; */
+    filter: grayscale(100%);
+    transition: opacity 0.3s ease;
+}
+
+.clients_track img:hover {
+    opacity: 0.7;
+}
+
+/* Fade edges */
+.clients_fade {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 110%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.clients_fade.left {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 30%, transparent);
+}
+
+.clients_fade.right {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 30%, transparent);
+}
+
+/* Animation */
+@keyframes clients-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .clients_heading {
+        font-size: 44px;
+        margin-bottom: 60px;
+    }
+
+    .clients_track {
+        gap: 72px;
+    }
+
+    .clients_track img {
+        height: 36px;
+    }
+
+
+    .clients_slider_wrap{
+        width:100%;
+    }
+
+    .clients_fade{
+        width:50px;
+    }
+}
+
+
+
+        /* ================= TIMELINE SVG PATH (CLEAN RESET) ================= */
+
+        .timeline_line_wrapper {
+    position: absolute;
+    left: 0;
+    top: 52%;
+    width: 100%;
+    height: 260px;
+    pointer-events: none;
+
+    /* MUST be below everything */
+    z-index: 0;
+}
+
+        .timeline_svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .timeline_path {
+            fill: none;
+            stroke: #a3c539;
+            stroke-width: 18px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+
+.timeline_heading_wrap,
+.timeline_wrapper,
+.timeline_track,
+.timeline_slide,
+.timeline_item,
+.timeline_image,
+.timeline_content {
+    position: relative;
+    z-index: 2;
+}
+
+/* .timeline_content, .timeline_image{
+    background-color: #ffffff;
+} */
+
+.timeline_section {
+    position: relative;
+    z-index: 0;
+}
+
+.timeline_svg,
+.timeline_path {
+    pointer-events: none;
+}
+
+/* ================= LAST TIMELINE CARD FIX (CORRECT SPACING) ================= */
+
+.timeline_item.timeline_last {
+    display: grid !important;
+    grid-template-columns: 620px 1fr;
+    column-gap: 140px;
+    align-items: flex-start;
+    max-width: 1400px;
+}
+
+/* Image on left */
+.timeline_item.timeline_last .timeline_image {
+    max-width: 560px;
+    width: 100%;
+}
+
+/* Text on right with proper breathing room */
+.timeline_item.timeline_last .timeline_content {
+    max-width: 580px;
+    padding-top: 24px;
+    background-color: #ffffff;
+}
+
+/* Typography spacing */
+.timeline_item.timeline_last .timeline_content h3 {
+    margin-bottom: 6px;
+}
+
+.timeline_item.timeline_last .timeline_content h4 {
+    margin-bottom: 20px;
+}
+
+.timeline_item.timeline_last .timeline_content p {
+    margin-bottom: 18px;
+}
+
+/* Ensure SVG line stays behind */
+.timeline_item.timeline_last,
+.timeline_item.timeline_last * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Rounded image */
+.timeline_item.timeline_last .timeline_image img {
+    border-radius: 44px;
+}
+
+/* Mobile fallback */
+
+
+
+@media (max-width: 991px) {
+    .timeline_slide:last-child {
+        width: 100vw;
+    }
+
+    .timeline_item.timeline_last {
+        grid-template-columns: 1fr;
+        row-gap: 48px;
+        max-width: 100%;
+    }
+
+    .timeline_item.timeline_last .timeline_content,
+    .timeline_item.timeline_last .timeline_image {
+        max-width: 100%;
+        padding-top: 0;
+    }
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+    <header>
+
+        <a href="" class="head_logg">
+            <img src="./images/footer-logo.png" alt="" class="white-logo">
+            <img src="./images/gamla-black-logo.png" alt="" class="black-logo">
+        </a>
+
+        <div class="head_menu">
+
+            <nav>
+                <a href="">Who we are</a>
+                <a href="">Our Solutions</a>
+                <a href="">Our Work</a>
+                <a href="">What Inspires Us</a>
+                <a href="">For Architects</a>
+                <a href="">Resources</a>
+                <a href="">Experience Center</a>
+            </nav>
+
+            <a href="./contact.html" class="contact_btn">
+                Contact Us
+            </a>
+
+            <div class="mb_menu_btn ham_btn">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+   <main>
+
+    <section class="about_section">
+
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 4104.11 913.43" class="about_svg about_bg_svg">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #a3c539;
+        stroke-miterlimit: 10;
+        stroke-width: 12.87px;
+      }
+    </style>
+  </defs>
+  <path class="about_svg_path" d="M6.41,346.04s33.19,380.17,639.65,482.76c259.01,43.81,377.68,18.83,428.65-24.17,76.4-64.46-15.73-181.56-96.86-123.17-23.1,16.62-42.25,43.58-48.17,87-14.95,109.63,80.46,137.05,166.84,138.13,57.19.72,187.31,5.94,329.5-55.16,113.21-48.65,249.61-120.49,490.3-239.87,377.15-187.07,588.36,129.74,1110.34,69.4,487.38-56.34,1007.75-308.75,1071.12-679.87"/>
+</svg>
+
+      
+        <div class="about_container">
+
+            <!-- LEFT TEXT -->
+            <div class="about_content">
+                <h2>About Us</h2>
+                <p>
+                    At the heart of Gamlaa is a quiet but powerful conviction: that
+                    environments become more alive, more human, when nature informs
+                    their design. This conviction has guided our journey from early
+                    prototypes to integrated biophilic systems. An evolution marked
+                    by ideas, milestones, and a shared commitment to designing with nature.
+                </p>
+            </div>
+
+            <!-- RIGHT IMAGE (ONLY ONE) -->
+            <div class="about_image">
+                <img src="./images/about-hero-1.png" alt="About Gamlaa">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about_stats_section">
+    <div class="about_stats_container">
+
+        <div class="stat_item">
+            <h3 data-target="8000000">0</h3>
+            <p>Sq. ft of Greenery<br>covered</p>
+        </div>
+
+        <div class="stat_item">
+            <h3 data-target="150">0</h3>
+            <p>Number of Key<br>Projects</p>
+        </div>
+
+        <div class="stat_item">
+            <h3 data-target="28000">0</h3>
+            <p>Number of Plants<br>Installed</p>
+        </div>
+
+        <div class="stat_item">
+            <h3 data-target="100">0</h3>
+            <p>Number of<br>Productions</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="about_values_section">
+    <div class="about_values_container">
+
+        <!-- Vision -->
+        <div class="value_card value_light">
+            <div class="value_icon">
+                <img src="./images/Vision.png" alt="Vision">
+            </div>
+            <h3>Vision</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="value_card value_green">
+            <div class="value_icon">
+                <img src="./images/Mission.png" alt="Mission">
+            </div>
+            <h3>Mission</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </div>
+
+        <!-- Purpose -->
+        <div class="value_card value_dark">
+            <div class="value_icon">
+                <img src="./images/Purpose.png" alt="Purpose">
+            </div>
+            <h3>Purpose</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="timeline_section">
+
+    <!-- Decorative background -->
+    <div class="timeline_bg_leaf">
+
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 172.37 202.22">
+  <defs>
+    <style>
+      .cls-11 {
+        stroke: #a4c639;
+        stroke-miterlimit: 10;
+        fill:none;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <path class="cls-11" d="M77.22,109.41c24.67,5.59,50.14-8.09,58.71-32.51L161.01,5.43c-26.3-9.23-55.1,4.61-64.33,30.91l-10.1,28.79-9.58-29.66C68.42,8.94,39.98-5.61,13.45,2.96l23.29,72.07c6.08,18.81,22.17,31.59,40.47,34.38Z"/>
+  <path class="cls-11" d="M.66,108.55l-.13,5.43c-1.15,47.29,36.26,86.56,83.55,87.71h0c47.26,1.15,86.5-36.23,87.64-83.48l.13-5.5L.66,108.55Z"/>
+</svg>
+
+
+    </div>
+   
+    <div class="timeline_line_wrapper">
+    <svg class="timeline_svg"
+         xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 13260.28 856.24"
+         preserveAspectRatio="none">
+        <path class="timeline_path"
+              d="M5.32,500.61s364.25,366.48,1614.8,313.8c280.03-11.8,551.13-101.96,782.86-259.61,316.77-215.5,829.88-512.25,1016.19-331.39,11.7,11.35,19.71,14.51,24.16,30.19,6.21,21.89-12.27,77-84.57,56.57-105.14-29.71-49.06-198.21,28.65-243.64,0,0,371.16-271.98,1369.14,351.57,521.98,326.14,1003.64,397.7,1466.78,427.12,399.03,25.34,735.34-89.16,1094.82-264.2,192.04-93.51,407.19-217.1,627.85-327.8,286.48-143.72,630.21-154.08,1088,68.57,250.85,122,721.52,316.95,1227.11,326.75,218.58,4.24,533.97-56.4,761.47-239.13,131.32-105.48,348.59-231.97,520.95-150.86,58.29,27.43,44.57,91.43-11.55,97.93-65.88,7.63-95.3-166.5,66.29-201.14,164.86-35.34,548.93,63.46,1051.43,251.43,515.84,192.96,603.43-89.14,603.43-89.14"/>
+    </svg>
+</div>
+
+    <!-- Heading -->
+    <div class="timeline_heading_wrap">
+        <h2>
+            Timeline of how<br>
+            we have evolved
+        </h2>
+    </div>
+
+    <!-- Horizontal timeline -->
+    <div class="timeline_wrapper">
+        <div class="timeline_track">
+
+<!-- Slide 1 -->
+<div class="timeline_slide">
+  <div class="timeline_item">
+    <div class="timeline_image">
+      <img src="./images/timeline-1.png" alt="2013–2018">
+    </div>
+    <div class="timeline_content">
+      <h3>2013–2018 :</h3>
+      <h4>The Beginning</h4>
+      <p>
+        Started as an e-commerce venture aiming to scale, while acquiring
+        7–8 corporate clients in indoor landscaping.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="timeline_slide">
+  <div class="timeline_item">
+    <div class="timeline_content">
+      <h3>2018–2020 :</h3>
+      <h4>The Pivot</h4>
+      <p>
+        We pivoted fully to workspace greenery, expanding across Hyderabad
+        and establishing our first manufacturing facility in Pune.
+      </p>
+    </div>
+    <div class="timeline_image">
+      <img src="./images/timeline-2.png" alt="2018–2020">
+    </div>
+  </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="timeline_slide">
+  <div class="timeline_item">
+    <div class="timeline_image">
+      <img src="./images/timeline-3.png" alt="2020–2021">
+    </div>
+    <div class="timeline_content">
+      <h3>2020–2021 :</h3>
+      <h4>Purpose Meets Moment</h4>
+      <p>
+        The pandemic revealed the natural role nature could play.
+        We deepened our focus on biophilic design and workplace wellness.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 4 -->
+<div class="timeline_slide">
+  <div class="timeline_item">
+    <div class="timeline_content">
+      <h3>2021–2022 :</h3>
+      <h4>Scaling Expertise</h4>
+      <p>
+        We expanded to Bengaluru, Pune, and Mumbai, building
+        end-to-end capabilities to serve growing demand.
+      </p>
+    </div>
+    <div class="timeline_image">
+      <img src="./images/timeline-4.png" alt="2021–2022">
+    </div>
+  </div>
+</div>
+
+<!-- Slide 5 -->
+<div class="timeline_slide">
+  <div class="timeline_item">
+    <div class="timeline_image">
+      <img src="./images/timeline-5.png" alt="2022–2023">
+    </div>
+    <div class="timeline_content">
+      <h3>2022–2023 :</h3>
+      <h4>Going National</h4>
+      <p>
+        Chennai and NCR joined our footprint.
+        Regional partnerships evolved into national relationships
+        as our infrastructure matured.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 6 -->
+<div class="timeline_slide">
+  <div class="timeline_item">
+    <div class="timeline_content">
+      <h3>2023–2024 :</h3>
+      <h4>Deepening Roots</h4>
+      <p>
+        Revenue growth reflected what mattered most—long-term client
+        relationships and infrastructure to serve them exceptionally.
+      </p>
+    </div>
+    <div class="timeline_image">
+      <img src="./images/timeline-6.png" alt="2023–2024">
+    </div>
+  </div>
+</div>
+
+<!-- Slide 7 -->
+<div class="timeline_slide">
+  <div class="timeline_item timeline_last">
+    
+    <div class="timeline_image">
+      <img src="./images/timeline-7.png" alt="2025–2026 Opening New Doors">
+    </div>
+
+    <div class="timeline_content">
+      <h3>2025–2026 :</h3>
+      <h4>Opening New Doors</h4>
+
+      <p>
+        Scaled our manufacturing facility to 35,000 sq ft in Pune,
+        expanding our capacity to craft bespoke biophilic solutions at scale.
+      </p>
+
+      <p>
+        Established a full‑fledged innovation lab—bringing together
+        concept development, product design, engineering, and technical
+        expertise under one roof.
+      </p>
+
+      <p>
+        Launched our first experience center in Bengaluru, creating a space
+        where design vision meets living reality.
+      </p>
+    </div>
+
+  </div>
+</div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="team_section">
+
+    <!-- Core Team -->
+    <h2 class="team_heading">Core Team</h2>
+
+    <div class="team_grid core_team">
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/1.png" alt="Srinivas Sakhare">
+            </div>
+            <div class="team_name">Srinivas Sakhare</div>
+            <p class="team_role">Founder &amp; CEO</p>
+        </div>
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/2.png" alt="Rohith Padyal">
+            </div>
+            <div class="team_name">Rohith Padyal</div>
+            <p class="team_role">Co-founder</p>
+        </div>
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/3.png" alt="Mayur Oswal">
+            </div>
+            <div class="team_name">Mayur Oswal</div>
+            <p class="team_role">Chief Design &amp; Innovation <br> Officer</p>
+        </div>
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/4.png" alt="Mayank Jain">
+            </div>
+            <div class="team_name">Mayank Jain</div>
+            <p class="team_role">Sr. VP – Finance &amp; Accounts</p>
+        </div>
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/5.png" alt="Aditya Pandharpure">
+            </div>
+            <div class="team_name">Aditya Pandharpure</div>
+            <p class="team_role">
+                Associate Director – Product Design &amp; Innovation
+            </p>
+        </div>
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/6.png" alt="Aditya C.">
+            </div>
+            <div class="team_name">Aditya C.</div>
+            <p class="team_role">
+                VP – Growth &amp; Partnership (South)
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Partners -->
+    <h2 class="team_heading partners_heading">Partners</h2>
+
+    <div class="team_grid partners_team">
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/7.png" alt="Saurabh Nigam">
+            </div>
+            <div class="team_name">Saurabh Nigam</div>
+            <p class="team_role">
+                Fractional CHRO, Strategic Advisor on Scaling People Function
+            </p>
+        </div>
+
+        <div class="team_card">
+            <div class="team_img_wrap">
+                <img src="./images/team/8.png" alt="Siddharth Kapur">
+            </div>
+            <div class="team_name">Siddharth Kapur</div>
+            <p class="team_role">
+                Virtual CMO, Brand &amp; GTM Strategist
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="clients_section">
+    <h2 class="clients_heading">Our Clients</h2>
+
+    <div class="clients_slider_wrap">
+        <div class="clients_fade left"></div>
+        <div class="clients_fade right"></div>
+
+        <div class="clients_slider">
+            <div class="clients_track">
+                <!-- Logos (repeatable) -->
+                <img src="./images/client-microsoft.png" alt="Microsoft">
+                <img src="./images/client-apple.png" alt="Apple">
+                <img src="./images/client-google.png" alt="Google">
+                <img src="./images/client-axis.png" alt="Axis Bank">
+                <img src="./images/client-sheraton.png" alt="Sheraton">
+
+                <img src="./images/client-microsoft.png" alt="">
+                <img src="./images/client-apple.png" alt="">
+                <img src="./images/client-google.png" alt="">
+                <img src="./images/client-axis.png" alt="">
+                <img src="./images/client-sheraton.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+    <footer>
+
+        <div class="footer_container">
+
+            <!-- Top Row: Text + Contact Info -->
+            <div class="footer_row footer_top">
+
+                <div class="footer_text">
+                    <p>Nature has been quietly absent from spaces. It is now often treated as an afterthought rather than an essential part of design. But at Gamlaa, we believe that truly great spaces don't just look good, <span class="highlight">they feel good too!</span></p>
+                </div>
+
+                <div class="footer_contact_info">
+
+                    <div class="f_info">
+                        <img src="./images/loc-green.png" alt="">
+                        <p>Headquarters - Jyothi Flora, Phase 2, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
+                    </div>
+
+                    <div class="f_info">
+                        <img src="./images/mail-icon.png" alt="">
+                        <p>contact@gamlaa.com</p>
+                    </div>
+
+                    <div class="f_info">
+                        <img src="./images/call-icon.png" alt="">
+                        <p>+91 9391966078</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Middle Row: Logo + Social Icons -->
+            <div class="footer_row footer_middle">
+
+                <div class="footer_logo">
+                    <img src="./images/footer-logo.png" alt="Gamlaa">
+                    <a href="" class="footer_contact_btn">Contact Us</a>
+                </div>
+
+                <div class="footer_social">
+                    <a href="" class="social_icon">
+                        <img src="./images/tweet.png" alt="">
+                    </a>
+                    <a href="" class="social_icon">
+                        <img src="./images/yt.png" alt="">
+                    </a>
+                    
+                    <a href="" class="social_icon">
+                        <img src="./images/whatsapp.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/tele.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/linked.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/fb.png" alt="">
+                    </a>
+                    
+                    <a href="" class="social_icon">
+                        <img src="./images/insta.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Row: Line + Menu -->
+            <div class="footer_row footer_bottom">
+
+                <div class="footer_line"></div>
+
+                <nav class="footer_nav">
+                    <a href="">Who we are</a>
+                    <a href="">Our Solutions</a>
+                    <a href="">Who we serve</a>
+                    <a href="">Design Inspiration</a>
+                    <a href="">For Architects</a>
+                    <a href="">Resources</a>
+                    <a href="">Experience Center</a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    
+    <!-- <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 200) {
+                $("header").addClass("darkHeader");
+            } else {
+                $("header").removeClass("darkHeader");
+            }
+        });
+
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll < lastScrollTop) {
+                document.body.classList.add('scrolling-up');
+                document.body.classList.remove('scrolling-down');
+            } else {
+                document.body.classList.remove('scrolling-up');
+                document.body.classList.add('scrolling-down');
+            }
+            lastScrollTop = currentScroll;
+        });
+
+        $('.mb_menu_btn').click(function() {
+            $('header').toggleClass('open_menu');
+            $(this).toggleClass('close_menu');
+            $(this).toggleClass('ham_btn');
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector(".contact_form_wrap form");
+
+            form.addEventListener("submit", function (e) {
+
+                const firstName = document.getElementById("first_name").value.trim();
+                const lastName = document.getElementById("last_name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const company = document.getElementById("company").value.trim();
+                const city = document.getElementById("city").value.trim();
+                const state = document.getElementById("state").value.trim();
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                let errors = [];
+
+                if (!firstName) errors.push("First Name is required.");
+                if (!lastName) errors.push("Last Name is required.");
+                if (!email) errors.push("Email is required.");
+                else if (!emailRegex.test(email)) errors.push("Enter a valid Email address.");
+                if (!company) errors.push("Company is required.");
+                if (!city) errors.push("City is required.");
+                if (!state) errors.push("State/Province is required.");
+
+                if (errors.length > 0) {
+                    alert(errors.join("\n"));
+                    e.preventDefault();
+                }
+            });
+        });
+
+
+
+
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            orientation: 'vertical',
+            gestureOrientation: 'vertical',
+            smoothWheel: true,
+            wheelMultiplier: 0.8,
+            touchMultiplier: 1.5,
+            infinite: false,
+        });
+
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+    </script>
+
+    <script>
+        if (window.innerWidth <= 768) { 
+            document.body.classList.add("mobile_res");
+            document.body.classList.remove("desktop_site");
+        } else {
+            document.body.classList.remove("mobile_res");
+            document.body.classList.add("desktop_site");
+        }
+
+        gsap.registerPlugin(ScrollTrigger, SplitText);
+
+        gsap.set('.mobile_res header .head_menu nav', { right: "-100%" });
+        gsap.set('.mobile_res header .head_menu nav a', { x: 30, autoAlpha: 0 });
+
+        const menuTl = gsap.timeline({ paused: true, reversed: true });
+        menuTl.to('.mobile_res header .head_menu nav', {
+            right: 0,
+            duration: 0.6,
+            ease: "expo.inOut",
+            overwrite: "auto"
+        })
+        .to('.mobile_res header .head_menu nav a', {
+            x: 0,
+            autoAlpha: 1,
+            duration: 0.4,
+            ease: "circ.inOut",
+            stagger: 0.08,
+            overwrite: "auto"
+        }, "-=0.2");
+            
+        $('.mobile_res header .mb_menu_btn.ham_btn').on('click', function () {
+            if (menuTl.reversed()) {
+                menuTl.play();
+            } else {
+                menuTl.reverse();
+            }
+        });
+        
+        $('.mobile_res header .mb_menu_btn.close_menu').on('click', function () {
+            menuTl.reverse();
+        });
+
+        gsap.set('.desktop_site header .head_menu a', { y: 40, opacity: 0 });
+        gsap.set('header .head_logg', { scale: 0.2, opacity: 0 });
+
+        gsap.to('header .head_logg', {
+            scale: 1,
+            opacity: 1,
+            duration: 0.6,
+            ease: "back.out(1.7)",
+        });
+        
+        gsap.to('.desktop_site header .head_menu a', {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: "back.out(1.7)",
+        });
+
+        /* ================= ABOUT HERO ANIMATION ================= */
+
+        const aboutSection = document.querySelector('.about_section');
+
+        if (aboutSection) {
+
+          const aboutTitle = new SplitText('.about_content h2', { type: 'words' });
+
+          gsap.set(aboutTitle.words, {
+            y: 60,
+            opacity: 0
+          });
+
+          gsap.set('.about_content p', {
+            y: 40,
+            opacity: 0
+          });
+
+          gsap.set('.about_image img', {
+            x: 80,
+            opacity: 0
+          });
+
+          gsap.set('.about_bg_svg', {
+            opacity: 1
+          });
+
+          const aboutTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: '.about_section',
+              start: 'top 75%',
+              toggleActions: 'play none none reverse'
+            }
+          });
+
+          aboutTl
+            .to(aboutTitle.words, {
+              y: 0,
+              opacity: 1,
+              duration: 0.6,
+              stagger: 0.08,
+              ease: 'back.out(1.6)'
+            })
+            .to('.about_content p', {
+              y: 0,
+              opacity: 1,
+              duration: 0.5,
+              ease: 'power2.out'
+            }, '-=0.3')
+            .to('.about_image img', {
+              x: 0,
+              opacity: 1,
+              duration: 0.7,
+              ease: 'power2.out'
+            }, '-=0.4');
+
+          /* ================= ABOUT SVG DRAW (NON-SCROLL) ================= */
+
+          const aboutSvgPath = document.querySelector('.about_svg_path');
+
+          if (aboutSvgPath) {
+
+            const aboutPathLength = aboutSvgPath.getTotalLength();
+
+            gsap.set(aboutSvgPath, {
+              strokeDasharray: aboutPathLength,
+              strokeDashoffset: aboutPathLength
+            });
+
+            aboutTl.to(aboutSvgPath, {
+              strokeDashoffset: 0,
+              duration: 1.6,
+              ease: 'power2.out'
+            }, '-=0.8');
+
+          }
+        }
+
+        /* ================= ABOUT VALUES ANIMATION ================= */
+
+        const valuesSection = document.querySelector('.about_values_section');
+
+        if (valuesSection) {
+
+          const valueCards = gsap.utils.toArray('.value_card');
+
+          // Initial state
+          gsap.set(valueCards, {
+            y: 60,
+            opacity: 0
+          });
+
+          const valuesTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: '.about_values_section',
+              start: 'top 75%',
+              toggleActions: 'play none none reverse'
+            }
+          });
+
+          valuesTl.to(valueCards, {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: 0.18,
+            ease: 'power3.out'
+          });
+        }
+
+        // Hero animations
+        const heroContent = document.querySelector('.contact_hero_content');
+        if (heroContent) {
+            const heroH1 = new SplitText('.contact_hero_content h1', { type: "words" });
+
+            gsap.set('.contact_hero_content p', { y: 30, opacity: 0 });
+            gsap.set(heroH1.words, { y: 50, opacity: 0 });
+            gsap.set('.contact_hero_image', { x: 50, opacity: 0 });
+
+            gsap.to('.contact_hero_content p', {
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                delay: 0.3,
+                ease: "power2.out",
+            });
+
+            gsap.to(heroH1.words, {
+                y: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.1,
+                delay: 0.5,
+                ease: "back.out(1.7)",
+            });
+
+            gsap.to('.contact_hero_image', {
+                x: 0,
+                opacity: 1,
+                duration: 0.8,
+                delay: 0.4,
+                ease: "power2.out",
+            });
+        }
+
+        // ================= TIMELINE HEADING ANIMATION =================
+        const timelineHeading = document.querySelector('.timeline_heading_wrap h2');
+
+        if (timelineHeading) {
+          const timelineHeadingSplit = new SplitText(timelineHeading, {
+            type: 'lines'
+          });
+
+          gsap.set(timelineHeadingSplit.lines, {
+            y: 60,
+            opacity: 0
+          });
+
+          gsap.to(timelineHeadingSplit.lines, {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: 0.12,
+            ease: 'back.out(1.6)',
+            scrollTrigger: {
+              trigger: '.timeline_heading_wrap',
+              start: 'top 75%',
+              toggleActions: 'play none none reverse'
+            }
+          });
+        }
+
+        /* ================= TEAM SECTION ANIMATION ================= */
+
+        const teamSection = document.querySelector('.team_section');
+
+        if (teamSection) {
+
+          /* Headings animation */
+          const teamHeadings = gsap.utils.toArray('.team_heading');
+
+          teamHeadings.forEach(heading => {
+            const split = new SplitText(heading, { type: 'lines' });
+
+            gsap.set(split.lines, {
+              y: 50,
+              opacity: 0
+            });
+
+            gsap.to(split.lines, {
+              y: 0,
+              opacity: 1,
+              duration: 0.6,
+              stagger: 0.08,
+              ease: 'back.out(1.6)',
+              scrollTrigger: {
+                trigger: heading,
+                start: 'top 85%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+              }
+            });
+          });
+
+          /* Team cards animation */
+          const teamCards = gsap.utils.toArray('.team_card');
+
+          gsap.set(teamCards, {
+            y: 60,
+            opacity: 0
+          });
+
+          gsap.to(teamCards, {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.12,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: '.team_grid',
+              start: 'top 85%',
+              toggleActions: 'play none none reverse',
+              invalidateOnRefresh: true
+            }
+          });
+        }
+
+        // Form section animation
+        const formTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.contact_form_section',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        formTl.from('.contact_form_wrap', {
+            y: 50,
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out",
+        })
+        .from('.contact_form_images img', {
+            y: 30,
+            opacity: 0,
+            stagger: 0.2,
+            duration: 0.5,
+            ease: "power2.out",
+        }, "-=0.3");
+
+        // Map section animation
+        const mapTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.contact_map_section',
+                start: 'top 80%',
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        mapTl.from('.contact_map', {
+            x: -50,
+            opacity: 0,
+            duration: 0.6,
+            ease: "power2.out",
+        })
+        .from('.location_item', {
+            y: 30,
+            opacity: 0,
+            stagger: 0.1,
+            duration: 0.4,
+            ease: "power2.out",
+        }, "-=0.3");
+
+        // Footer animation
+        const footerTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: 'footer',
+                start: "top 80%",
+                toggleActions: "play none none reverse",
+            }
+        });
+
+        const footerText = new SplitText('.footer_text p', { type: 'lines' });
+
+        footerTl.fromTo(footerText.lines, {
+            y: 20, 
+            opacity: 0,
+        },{
+            y: 0, 
+            opacity: 1, 
+            stagger: 0.03, 
+            duration: 0.4, 
+            ease: "power2.out",
+        })
+        .fromTo('.footer_contact_info .f_info', {
+            x: 20, 
+            opacity: 0,
+        },{
+            x: 0, 
+            opacity: 1, 
+            stagger: 0.05, 
+            duration: 0.3, 
+            ease: "power2.out",
+        }, "-=0.3")
+        .fromTo('.footer_logo img', {
+            y: 30,
+            opacity: 0,
+        },{
+            y: 0,
+            opacity: 1,
+            duration: 0.4,
+            ease: "power2.out",
+        }, "-=0.2")
+        .fromTo('.footer_logo .footer_contact_btn', {
+            y: 15,
+            opacity: 0,
+        },{
+            y: 0,
+            opacity: 1,
+            duration: 0.3,
+            ease: "power2.out",
+        }, "-=0.2")
+        .fromTo('.footer_social .social_icon', {
+            y: 15, 
+            opacity: 0,
+        },{
+            y: 0, 
+            opacity: 1, 
+            stagger: 0.03, 
+            duration: 0.25, 
+            ease: "power2.out",
+        }, "-=0.2")
+        .fromTo('.footer_line', {
+            scaleX: 0,
+            transformOrigin: "left center",
+        },{
+            scaleX: 1,
+            duration: 0.5,
+            ease: "power2.out",
+        }, "-=0.15")
+        .fromTo('.footer_nav a', {
+            y: 10, 
+            opacity: 0,
+        },{
+            y: 0, 
+            opacity: 1, 
+            stagger: 0.03, 
+            duration: 0.25, 
+            ease: "power2.out",
+        }, "-=0.3");
+
+    const timelineTrack = document.querySelector(".timeline_track");
+    const timelineSlides = gsap.utils.toArray(".timeline_slide");
+
+    gsap.to(timelineTrack, {
+        x: () => -(timelineTrack.scrollWidth - window.innerWidth),
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".timeline_section",
+            pin: true,
+            scrub: 1,
+            end: () => "+=" + (timelineTrack.scrollWidth - window.innerWidth),
+        }
+    });
+    ScrollTrigger.refresh();
+
+    /* ================= TIMELINE SVG PATH – CLEAN REWRITE ================= */
+
+    const timelinePath = document.querySelector(".timeline_path");
+    const timelineTrackEl = document.querySelector(".timeline_track");
+
+    const timelinePathLength = timelinePath.getTotalLength();
+
+    /* Prepare path */
+    gsap.set(timelinePath, {
+        strokeDasharray: timelinePathLength,
+        strokeDashoffset: timelinePathLength
+    });
+
+    /* Draw path in sync with horizontal scroll */
+    gsap.to(timelinePath, {
+        strokeDashoffset: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".timeline_section",
+            start: "top top",
+            end: () => "+=" + (timelineTrackEl.scrollWidth - window.innerWidth),
+            scrub: 1
+        }
+    });
+
+
+    /* ================= INFINITE CLIENTS SLIDER ================= */
+
+    const slider = document.querySelector('.clients_slider');
+    const track = document.querySelector('.clients_track');
+
+    let isDown = false;
+    let startX;
+    let scrollX = 0;
+    let velocity = 0;
+
+    // Duplicate content for infinite loop
+    track.innerHTML += track.innerHTML;
+
+    const halfWidth = track.scrollWidth / 2;
+
+    function animate() {
+        scrollX += 0.6 + velocity;
+        velocity *= 0.92;
+
+        /* Wrap forward */
+        if (scrollX >= halfWidth) {
+            scrollX -= halfWidth;
+        }
+
+        /* Wrap backward (KEY FIX) */
+        if (scrollX < 0) {
+            scrollX += halfWidth;
+        }
+
+        track.style.transform = `translateX(${-scrollX}px)`;
+        requestAnimationFrame(animate);
+    }
+    animate();
+
+    /* Prevent default browser image drag */
+    document.querySelectorAll('.clients_track img').forEach(img => {
+        img.addEventListener('dragstart', e => e.preventDefault());
+    });
+
+    // Drag support
+    slider.addEventListener('pointerdown', (e) => {
+        isDown = true;
+        startX = e.clientX;
+        slider.setPointerCapture(e.pointerId);
+    });
+
+    slider.addEventListener('pointermove', (e) => {
+        if (!isDown) return;
+        const dx = e.clientX - startX;
+        scrollX -= dx;
+        if (scrollX < 0) scrollX += halfWidth;
+        velocity = -dx * 0.15;
+        startX = e.clientX;
+    });
+
+    slider.addEventListener('pointerup', () => {
+        isDown = false;
+    });
+
+    slider.addEventListener('pointerleave', () => {
+        isDown = false;
+    });
+
+    </script>
+
+    <script>
+  const statItems = document.querySelectorAll('.stat_item h3');
+
+  let statsAnimated = false;
+
+  function animateStats() {
+    if (statsAnimated) return;
+
+    statItems.forEach(stat => {
+      const target = +stat.getAttribute('data-target');
+      const isMillion = target >= 1000000;
+      const duration = 1500;
+      const startTime = performance.now();
+
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        let value = Math.floor(progress * target);
+
+        if (isMillion) {
+          stat.textContent = (value / 1000000).toFixed(0) + 'MN+';
+        } else if (target === 28000) {
+          stat.textContent = value.toLocaleString();
+        } else {
+          stat.textContent = value + '+';
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+
+      requestAnimationFrame(update);
+    });
+
+    statsAnimated = true;
+  }
+
+  const statsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateStats();
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.about_stats_section').forEach(section => {
+    statsObserver.observe(section);
+  });
+</script> -->
+
+
+
+<script>
+// ============================================================================
+//  UTILITIES & INITIAL SETUP
+// ============================================================================
+
+// Global variables
+let lastScrollTop = 0;
+const isMobileInitial = window.innerWidth <= 768;
+
+// Dark header
+$(window).on('scroll', function () {
+    const scroll = $(window).scrollTop();
+    $('header').toggleClass('darkHeader', scroll >= 200);
+});
+
+// Scroll direction detection
+window.addEventListener('scroll', function () {
+    const current = window.pageYOffset || document.documentElement.scrollTop;
+
+    document.body.classList.toggle('scrolling-up', current < lastScrollTop);
+    document.body.classList.toggle('scrolling-down', current > lastScrollTop);
+
+    lastScrollTop = current <= 0 ? 0 : current;
+}, { passive: true });
+
+// ============================================================================
+//  LENIS SMOOTH SCROLL + GSAP INTEGRATION
+// ============================================================================
+
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    wheelMultiplier: 0.8,
+    touchMultiplier: 1.5,
+    infinite: false
+});
+
+lenis.on('scroll', ScrollTrigger.update);
+gsap.ticker.add(time => lenis.raf(time * 1000));
+gsap.ticker.lagSmoothing(0);
+
+// ============================================================================
+//  MAIN ANIMATIONS INITIALIZER
+// ============================================================================
+
+function initPageAnimations() {
+    // Kill any previous ScrollTriggers (important!)
+    ScrollTrigger.getAll().forEach(st => st.kill());
+
+    gsap.registerPlugin(ScrollTrigger, SplitText);
+
+    // Mobile / Desktop class
+    const isMobile = window.innerWidth <= 768;
+    document.body.classList.toggle('mobile_res', isMobile);
+    document.body.classList.toggle('desktop_site', !isMobile);
+
+    // ── Mobile Menu ───────────────────────────────────────────────
+    if (isMobile) {
+        gsap.set('.mobile_res header .head_menu nav', { right: '-100%' });
+        gsap.set('.mobile_res header .head_menu nav a', { x: 30, autoAlpha: 0 });
+
+        const menuTl = gsap.timeline({ paused: true, reversed: true });
+        menuTl
+            .to('.mobile_res header .head_menu nav', {
+                right: 0,
+                duration: 0.6,
+                ease: 'expo.inOut'
+            })
+            .to('.mobile_res header .head_menu nav a', {
+                x: 0,
+                autoAlpha: 1,
+                duration: 0.4,
+                stagger: 0.08,
+                ease: 'circ.inOut'
+            }, '-=0.2');
+
+        // Remove previous listeners to prevent duplicates
+        $('.mobile_res header .mb_menu_btn').off('click');
+
+        $('.mobile_res header .mb_menu_btn').on('click', function () {
+            const $btn = $(this);
+            $btn.toggleClass('close_menu ham_btn');
+            $('header').toggleClass('open_menu');
+
+            menuTl.reversed() ? menuTl.play() : menuTl.reverse();
+        });
+    }
+
+    // ── Desktop header entrance ───────────────────────────────────
+    if (!isMobile) {
+        gsap.set('.desktop_site header .head_menu a', { y: 40, opacity: 0 });
+        gsap.set('header .head_logg', { scale: 0.2, opacity: 0 });
+
+        gsap.to('header .head_logg', {
+            scale: 1,
+            opacity: 1,
+            duration: 0.6,
+            ease: 'back.out(1.7)'
+        });
+
+        gsap.to('.desktop_site header .head_menu a', {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: 'back.out(1.7)'
+        });
+    }
+
+    // ── Helper: create scroll-triggered stagger animation ─────────
+    function createStaggerAnimation(selector, options) {
+        const elements = gsap.utils.toArray(selector);
+        if (!elements.length) return;
+
+        gsap.set(elements, { y: options.y || 60, opacity: 0 });
+
+        return gsap.to(elements, {
+            y: 0,
+            opacity: 1,
+            duration: options.duration || 0.7,
+            stagger: options.stagger || 0.12,
+            ease: options.ease || 'power3.out',
+            scrollTrigger: {
+                trigger: options.trigger || elements[0],
+                start: options.start || 'top 85%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true,
+                ...options.scrollTriggerExtra
+            }
+        });
+    }
+
+    // ── ABOUT SECTION ─────────────────────────────────────────────
+    if (document.querySelector('.about_section')) {
+        const title = new SplitText('.about_content h2', { type: 'words' });
+
+        gsap.set(title.words, { y: 60, opacity: 0 });
+        gsap.set('.about_content p', { y: 40, opacity: 0 });
+        gsap.set('.about_image img', { x: 80, opacity: 0 });
+        gsap.set('.about_bg_svg', { opacity: 1 });
+
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.about_section',
+                start: 'top 75%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+            }
+        });
+
+        tl
+            .to(title.words, { y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'back.out(1.6)' })
+            .to('.about_content p', { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }, '-=0.3')
+            .to('.about_image img', { x: 0, opacity: 1, duration: 0.7, ease: 'power2.out' }, '-=0.4');
+
+        // SVG draw
+        const path = document.querySelector('.about_svg_path');
+        if (path) {
+            const len = path.getTotalLength();
+            gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
+            tl.to(path, { strokeDashoffset: 0, duration: 1.6, ease: 'power2.out' }, '-=0.8');
+        }
+    }
+
+    // ── VALUES SECTION ────────────────────────────────────────────
+    if (document.querySelector('.about_values_section')) {
+        createStaggerAnimation('.value_card', {
+            trigger: '.about_values_section',
+            start: 'top 75%',
+            stagger: 0.18,
+            duration: 0.7,
+            ease: 'power3.out'
+        });
+    }
+
+    // ── CONTACT HERO (load animation, not scroll) ─────────────────
+    if (document.querySelector('.contact_hero_content')) {
+        const title = new SplitText('.contact_hero_content h1', { type: 'words' });
+
+        gsap.set('.contact_hero_content p', { y: 30, opacity: 0 });
+        gsap.set(title.words, { y: 50, opacity: 0 });
+        gsap.set('.contact_hero_image', { x: 50, opacity: 0 });
+
+        gsap.to('.contact_hero_content p',       { y: 0, opacity: 1, duration: 0.6, delay: 0.3,  ease: 'power2.out' });
+        gsap.to(title.words,                    { y: 0, opacity: 1, duration: 0.5, delay: 0.5,  stagger: 0.1, ease: 'back.out(1.7)' });
+        gsap.to('.contact_hero_image',          { x: 0, opacity: 1, duration: 0.8, delay: 0.4,  ease: 'power2.out' });
+    }
+
+    // ── TIMELINE HEADING ──────────────────────────────────────────
+    if (document.querySelector('.timeline_heading_wrap h2')) {
+        const heading = document.querySelector('.timeline_heading_wrap h2');
+        const split = new SplitText(heading, { type: 'lines' });
+
+        gsap.set(split.lines, { y: 60, opacity: 0 });
+
+        gsap.to(split.lines, {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: 0.12,
+            ease: 'back.out(1.6)',
+            scrollTrigger: {
+                trigger: '.timeline_heading_wrap',
+                start: 'top 75%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+            }
+        });
+    }
+
+    // ── TEAM SECTION (after pinned timeline) ──────────────────────
+    if (document.querySelector('.team_section')) {
+        // Headings
+        gsap.utils.toArray('.team_heading').forEach(heading => {
+            const split = new SplitText(heading, { type: 'lines' });
+            gsap.set(split.lines, { y: 50, opacity: 0 });
+
+            gsap.to(split.lines, {
+                y: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.08,
+                ease: 'back.out(1.6)',
+                scrollTrigger: {
+                    trigger: heading,
+                    start: 'top 90%',
+                    endTrigger: '.timeline_section',
+                    end: 'bottom top',
+                    toggleActions: 'play none none reverse',
+                    invalidateOnRefresh: true
+                }
+            });
+        });
+
+        // Cards – most important fix
+        gsap.to(gsap.utils.toArray('.team_card'), {
+            y: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.12,
+            ease: 'power3.out',
+            scrollTrigger: {
+                trigger: '.team_grid',
+                start: 'top 90%',
+                endTrigger: '.timeline_section',   // ← critical
+                end: 'bottom top',                 // ← critical
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+            }
+        });
+    }
+
+    // ── FORM, MAP, FOOTER ─────────────────────────────────────────
+    // (kept almost same structure, added invalidateOnRefresh)
+
+    if (document.querySelector('.contact_form_section')) {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '.contact_form_section',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+            }
+        })
+        .from('.contact_form_wrap', { y: 50, opacity: 0, duration: 0.6, ease: 'power2.out' })
+        .from('.contact_form_images img', { y: 30, opacity: 0, stagger: 0.2, duration: 0.5, ease: 'power2.out' }, '-=0.3');
+    }
+
+    if (document.querySelector('.contact_map_section')) {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '.contact_map_section',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+            }
+        })
+        .from('.contact_map', { x: -50, opacity: 0, duration: 0.6, ease: 'power2.out' })
+        .from('.location_item', { y: 30, opacity: 0, stagger: 0.1, duration: 0.4, ease: 'power2.out' }, '-=0.3');
+    }
+
+    if (document.querySelector('footer')) {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: 'footer',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse',
+                invalidateOnRefresh: true
+            }
+        });
+
+        const lines = new SplitText('.footer_text p', { type: 'lines' });
+
+        tl
+            .fromTo(lines.lines, { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.03, duration: 0.4, ease: 'power2.out' })
+            .fromTo('.footer_contact_info .f_info', { x: 20, opacity: 0 }, { x: 0, opacity: 1, stagger: 0.05, duration: 0.3, ease: 'power2.out' }, '-=0.3')
+            .fromTo('.footer_logo img', { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out' }, '-=0.2')
+            .fromTo('.footer_logo .footer_contact_btn', { y: 15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: 'power2.out' }, '-=0.2')
+            .fromTo('.footer_social .social_icon', { y: 15, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.03, duration: 0.25, ease: 'power2.out' }, '-=0.2')
+            .fromTo('.footer_line', { scaleX: 0, transformOrigin: 'left center' }, { scaleX: 1, duration: 0.5, ease: 'power2.out' }, '-=0.15')
+            .fromTo('.footer_nav a', { y: 10, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.03, duration: 0.25, ease: 'power2.out' }, '-=0.3');
+    }
+
+    // ── HORIZONTAL TIMELINE ───────────────────────────────────────
+    const track = document.querySelector('.timeline_track');
+    if (track) {
+        const scrollDist = track.scrollWidth - window.innerWidth;
+
+        gsap.to(track, {
+            x: () => -scrollDist,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.timeline_section',
+                pin: true,
+                scrub: 1,
+                end: () => '+=' + scrollDist,
+                invalidateOnRefresh: true
+            }
+        });
+
+        const path = document.querySelector('.timeline_path');
+        if (path) {
+            const len = path.getTotalLength();
+            gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
+            gsap.to(path, {
+                strokeDashoffset: 0,
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '.timeline_section',
+                    start: 'top top',
+                    end: () => '+=' + scrollDist,
+                    scrub: 1,
+                    invalidateOnRefresh: true
+                }
+            });
+        }
+    }
+
+    // ── INFINITE CLIENTS SLIDER ───────────────────────────────────
+    const slider = document.querySelector('.clients_slider');
+    const sliderTrack = document.querySelector('.clients_track');
+
+    if (slider && sliderTrack) {
+        sliderTrack.innerHTML += sliderTrack.innerHTML;
+        const half = sliderTrack.scrollWidth / 2;
+
+        let isDown = false;
+        let startX;
+        let scrollX = 0;
+        let velocity = 0;
+
+        function tick() {
+            scrollX += 0.6 + velocity;
+            velocity *= 0.92;
+
+            if (scrollX >= half) scrollX -= half;
+            if (scrollX < 0) scrollX += half;
+
+            sliderTrack.style.transform = `translateX(${-scrollX}px)`;
+            requestAnimationFrame(tick);
+        }
+
+        tick();
+
+        // Prevent image drag
+        sliderTrack.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', e => e.preventDefault());
+        });
+
+        // Pointer events
+        slider.addEventListener('pointerdown', e => {
+            isDown = true;
+            startX = e.clientX;
+            slider.setPointerCapture(e.pointerId);
+        });
+
+        slider.addEventListener('pointermove', e => {
+            if (!isDown) return;
+            const dx = e.clientX - startX;
+            scrollX -= dx;
+            if (scrollX < 0) scrollX += half;
+            velocity = -dx * 0.15;
+            startX = e.clientX;
+        });
+
+        slider.addEventListener('pointerup pointerleave', () => isDown = false);
+    }
+
+    // Final refresh after everything is set up
+    setTimeout(() => ScrollTrigger.refresh(true), 100);
+}
+
+// ============================================================================
+//  STATS COUNTER
+// ============================================================================
+
+let statsAnimated = false;
+
+function animateStats() {
+    if (statsAnimated) return;
+    statsAnimated = true;
+
+    document.querySelectorAll('.stat_item h3').forEach(el => {
+        const target = +el.dataset.target;
+        const duration = 1500;
+        const isMillion = target >= 1000000;
+        const startTime = performance.now();
+
+        function update(time) {
+            const progress = Math.min((time - startTime) / duration, 1);
+            let value = Math.floor(progress * target);
+
+            el.textContent = isMillion
+                ? (value / 1000000).toFixed(0) + 'MN+'
+                : target === 28000
+                    ? value.toLocaleString()
+                    : value + '+';
+
+            if (progress < 1) requestAnimationFrame(update);
+        }
+
+        requestAnimationFrame(update);
+    });
+}
+
+const statsObserver = new IntersectionObserver(
+    entries => entries.forEach(entry => entry.isIntersecting && animateStats()),
+    { threshold: 0.4 }
+);
+
+document.querySelectorAll('.about_stats_section').forEach(el => statsObserver.observe(el));
+
+// ============================================================================
+//  EXECUTION
+// ============================================================================
+
+// Run once after load
+window.addEventListener('load', initPageAnimations);
+
+// ================= ABOUT SVG DRAW ON LOAD =================
+const aboutSvgPath = document.querySelector('.about_svg_path');
+
+if (aboutSvgPath) {
+    const pathLength = aboutSvgPath.getTotalLength();
+
+    gsap.set(aboutSvgPath, {
+        strokeDasharray: pathLength,
+        strokeDashoffset: pathLength
+    });
+
+    gsap.to(aboutSvgPath, {
+        strokeDashoffset: 0,
+        duration: 1.8,
+        ease: 'power2.out'
+    });
+}
+
+// Handle resize
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        ScrollTrigger.refresh(true);
+    }, 200);
+});
+
+// Form validation (unchanged)
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.contact_form_wrap form');
+    if (!form) return;
+
+    form.addEventListener('submit', e => {
+        const fields = {
+            first_name: 'First Name',
+            last_name: 'Last Name',
+            email: 'Email',
+            company: 'Company',
+            city: 'City',
+            state: 'State/Province'
+        };
+
+        const errors = [];
+
+        Object.entries(fields).forEach(([id, label]) => {
+            const value = document.getElementById(id)?.value.trim();
+            if (!value) {
+                errors.push(`${label} is required.`);
+            } else if (id === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                errors.push('Enter a valid Email address.');
+            }
+        });
+
+        if (errors.length) {
+            alert(errors.join('\n'));
+            e.preventDefault();
+        }
+    });
+});
+</script>
+
+</body>
+</html>

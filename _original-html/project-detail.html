@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Center - Gamlaa</title>
+    <link rel="stylesheet" href="./css.css?a=30">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .ecf-inner {
+    align-items: flex-start;
+}
+header .head_menu nav a {
+    color: #053f33;
+}
+.project-hero__grid {
+    min-height: max-content !important;
+}
+
+@media (max-width: 480px) {
+    .ph-card.ph-card--scale,
+ .ph-cards__row--3 .ph-card--services {
+    flex-direction: column-reverse;
+    align-items: baseline;
+}
+}
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="" class="head_logg">
+            <img src="./images/footer-logo.png" alt="" class="white-logo">
+            <img src="./images/gamla-black-logo.png" alt="" class="black-logo">
+        </a>
+
+        <div class="head_menu">
+
+            <nav>
+                <a href="">Who we are</a>
+                <a href="">Our Solutions</a>
+                <a href="">Our Work</a>
+                <a href="">What Inspires Us</a>
+                <a href="">For Architects</a>
+                <a href="">Resources</a>
+                <a href="">Experience Center</a>
+            </nav>
+
+            <a href="./contact.html" class="contact_btn">
+                Contact Us
+            </a>
+
+            <div class="mb_menu_btn ham_btn">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="project-hero__grid">
+
+                <!-- Column 1 (8fr): Title -->
+                <div class="project-hero__col-main">
+                    <h1 class="project-hero__title">Amazon Campus<br>Hyderabad</h1>
+                </div>
+
+                <!-- Column 2 (4fr): Info cards stacked rows -->
+                <div class="project-hero__col-cards">
+
+                    <!-- Rows 1+2: Client left tall + Scale/Location stacked right -->
+                    <div class="ph-cards__row ph-cards__row--top">
+                        <div class="ph-card ph-card--client">
+                            <span class="ph-card__label">Client:</span>
+                            <span class="ph-card__value">Amazon</span>
+                        </div>
+                        <div class="ph-cards__col-right">
+                            <div class="ph-card ph-card--scale">
+                                <div class="ph-card__body">
+                                    <span class="ph-card__label">Scale:</span>
+                                    <span class="ph-card__value">Large-scale<br>interior vivarium</span>
+                                </div>
+                                <div class="ph-card__icon ph-card__icon--dark">
+                                    <img src="./images/leaf-green-bg.png" alt="Leaf">
+                                </div>
+                            </div>
+                            <div class="ph-card ph-card--location">
+                                <span class="ph-card__label">Location:</span>
+                                <span class="ph-card__value">Hyderabad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Services 58% + Architect 42% -->
+                    <div class="ph-cards__row ph-cards__row--3">
+                        <div class="ph-card ph-card--services">
+                            <div class="ph-card__body">
+                                <span class="ph-card__label">Services:</span>
+                                <span class="ph-card__value">Biophilia as a Service, Full Design &amp; Implementation,
+                                    Maintenance</span>
+                            </div>
+                            <div class="ph-card__icon">
+                                <img src="./images/service-biophilia.png" alt="Biophilia service">
+                            </div>
+                        </div>
+                        <div class="ph-card ph-card--architect">
+                            <span class="ph-card__label">Architect:</span>
+                            <span class="ph-card__value">Lorem Ipsum</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Vivarium Description Section -->
+        <section class="vivarium-section">
+            <div class="vivarium-container">
+
+                <!-- Col 1: Heading (5/12) -->
+                <div class="vivarium-col-text">
+                    <h2 class="vivarium-heading">India's first large-scale interior vivarium: a living, breathing
+                        ecosystem within a corporate workplace</h2>
+                </div>
+
+                <!-- Col 2: Image Carousel (7/12) -->
+                <div class="vivarium-col-carousel">
+                    <div class="vivarium-carousel">
+                        <div class="vivarium-carousel__track-wrapper">
+                            <div class="vivarium-carousel__track" id="vivariumTrack">
+                                <div class="vivarium-carousel__slide">
+                                    <img src="./images/interior-gallery-1.png" alt="Interior vivarium view 1">
+                                </div>
+                                <div class="vivarium-carousel__slide">
+                                    <img src="./images/interior-gallery-2.png" alt="Interior vivarium view 2">
+                                </div>
+                                <div class="vivarium-carousel__slide">
+                                    <img src="./images/gallery-img1.jpg" alt="Interior vivarium view 3">
+                                </div>
+                                <div class="vivarium-carousel__slide">
+                                    <img src="./images/interior-gallery-1.png" alt="Interior vivarium view 4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arrow Buttons -->
+                        <button class="vivarium-carousel__btn vivarium-carousel__btn--prev" id="vivariumPrev"
+                            aria-label="Previous">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </button>
+                        <button class="vivarium-carousel__btn vivarium-carousel__btn--next" id="vivariumNext"
+                            aria-label="Next">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Challenge / Approach / Result Section -->
+        <section class="car-section">
+            <div class="car-inner">
+
+                <div class="car-card car-card--cream">
+                    <h3 class="car-card__heading">The Challenge</h3>
+                    <p class="car-card__body">Amazon wanted something unprecedented in their Hyderabad campus—a vivarium
+                        that would serve as both workplace sanctuary and design statement. They envisioned an immersive
+                        environment where the boundary between work and nature dissolves, but nothing at that scale had
+                        been attempted in India before.</p>
+                </div>
+
+                <div class="car-card car-card--olive">
+                    <h3 class="car-card__heading">Our Approach</h3>
+                    <p class="car-card__body">We engineered a complete biophilic ecosystem: climate control, live moss
+                        walls, humidity management, and a meticulously curated plant composition. From conceptualization
+                        through ongoing maintenance, we ensured the vivarium wouldn't just survive—it would thrive and
+                        evolve seasonally.</p>
+                </div>
+
+                <div class="car-card car-card--dark">
+                    <h3 class="car-card__heading">The Result</h3>
+                    <p class="car-card__body">The vivarium became Amazon's most-talked-about space. Employees describe
+                        it as restorative in ways they can't quite articulate. It's a moment of genuine connection to
+                        living nature within a high-intensity work environment—proof that scale and sophistication don't
+                        diminish that human need.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testi-section">
+
+            <h2 class="testi-heading">Testimonial</h2>
+
+            <!-- Slider -->
+            <div class="testi-slider-wrap">
+                <div class="testi-track" id="testiTrack">
+
+                    <div class="testi-slide">
+                        <div class="testi-slide__img">
+                            <img src="./images/testimonial=person.png" alt="Testimonial person">
+                        </div>
+                        <div class="testi-slide__content">
+                            <span class="testi-quote">&#8220;</span>
+                            <p class="testi-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                                ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <p class="testi-name">- Lorem Ipsum</p>
+                        </div>
+                    </div>
+
+                    <div class="testi-slide">
+                        <div class="testi-slide__img">
+                            <img src="./images/testimonial=person.png" alt="Testimonial person">
+                        </div>
+                        <div class="testi-slide__content">
+                            <span class="testi-quote">&#8220;</span>
+                            <p class="testi-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore
+                                veritatis et quasi.</p>
+                            <p class="testi-name">- Jane Smith</p>
+                        </div>
+                    </div>
+
+                    <div class="testi-slide">
+                        <div class="testi-slide__img">
+                            <img src="./images/testimonial=person.png" alt="Testimonial person">
+                        </div>
+                        <div class="testi-slide__content">
+                            <span class="testi-quote">&#8220;</span>
+                            <p class="testi-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                excepturi sint occaecati.</p>
+                            <p class="testi-name">- Alex Johnson</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Marquee -->
+            <div class="testi-marquee-wrap">
+                <div class="testi-marquee">
+                    <img src="./images/yellow-leaf-marquee.png" alt="">
+                    <img src="./images/yellow-leaf-marquee.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Product Used In This Project Section -->
+        <section class="pup-section">
+            <div class="pup-inner">
+
+                <h2 class="pup-heading">Product Used In This Project</h2>
+
+                <div class="pup-grid">
+
+                    <div class="pup-card">
+                        <div class="pup-card__img">
+                            <img src="./images/gallery-img1.jpg" alt="Product 1">
+                        </div>
+                        <div class="pup-card__body">
+                            <p class="pup-card__name">Lorem Ipsum</p>
+                            <a href="" class="pup-card__btn" aria-label="View product">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pup-card">
+                        <div class="pup-card__img">
+                            <img src="./images/gallery-img4.jpg" alt="Product 2">
+                        </div>
+                        <div class="pup-card__body">
+                            <p class="pup-card__name">Lorem Ipsum</p>
+                            <a href="" class="pup-card__btn" aria-label="View product">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pup-card">
+                        <div class="pup-card__img">
+                            <img src="./images/gallery-img3.jpg" alt="Product 3">
+                        </div>
+                        <div class="pup-card__body">
+                            <p class="pup-card__name">Lorem Ipsum</p>
+                            <a href="" class="pup-card__btn" aria-label="View product">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pup-card">
+                        <div class="pup-card__img">
+                            <img src="./images/gallery-img4.jpg" alt="Product 4">
+                        </div>
+                        <div class="pup-card__body">
+                            <p class="pup-card__name">Lorem Ipsum</p>
+                            <a href="" class="pup-card__btn" aria-label="View product">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="ecf-section">
+            <div class="ecf-inner">
+
+                <!-- Left: Heading -->
+                <div class="ecf-col-text">
+                    <h2 class="ecf-heading">Let's bring biophilic experience to you</h2>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="ecf-col-form">
+                    <form class="ecf-form" action="" method="post">
+
+                        <div class="ecf-row ecf-row--2">
+                            <div class="ecf-field">
+                                <input type="text" name="fullname" placeholder="Full Name*" required>
+                            </div>
+                            <div class="ecf-field">
+                                <input type="email" name="email" placeholder="Email*" required>
+                            </div>
+                        </div>
+
+                        <div class="ecf-row ecf-row--1">
+                            <div class="ecf-field">
+                                <input type="tel" name="phone" placeholder="Phone Number*" required>
+                            </div>
+                        </div>
+
+                        <div class="ecf-row ecf-row--1">
+                            <div class="ecf-field">
+                                <textarea name="message" placeholder="Message*" rows="5" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="ecf-row ecf-row--submit">
+                            <button type="submit" class="ecf-submit">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+                  <!-- Marquee -->
+     
+        </section>
+
+        <!-- Footer Below Image -->
+               <div class="testi-marquee-wrap">
+                <div class="testi-marquee">
+                    <img src="./images/green-leaf-marquee.png" alt="">
+                    <img src="./images/green-leaf-marquee.png" alt="">
+                </div>
+            </div>
+    </main>
+
+
+    <footer>
+
+        <div class="footer_container">
+
+            <!-- Top Row: Text + Contact Info -->
+            <div class="footer_row footer_top">
+
+                <div class="footer_text">
+                    <p>Nature has been quietly absent from spaces. It is now often treated as an afterthought rather
+                        than an essential part of design. But at Gamlaa, we believe that truly great spaces don't just
+                        look good, <span class="highlight">they feel good too!</span></p>
+                </div>
+
+                <div class="footer_contact_info">
+
+                    <div class="f_info">
+                        <img src="./images/loc-green.png" alt="">
+                        <p>Headquarters - Jyothi Flora, Phase 2, Kavuri Hills, Madhapur, Hyderabad, Telangana 500033</p>
+                    </div>
+
+                    <div class="f_info">
+                        <img src="./images/mail-icon.png" alt="">
+                        <p>contact@gamlaa.com</p>
+                    </div>
+
+                    <div class="f_info">
+                        <img src="./images/call-icon.png" alt="">
+                        <p>+91 9391966078</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Middle Row: Logo + Social Icons -->
+            <div class="footer_row footer_middle">
+
+                <div class="footer_logo">
+                    <img src="./images/footer-logo.png" alt="Gamlaa">
+                    <a href="" class="footer_contact_btn">Contact Us</a>
+                </div>
+
+                <div class="footer_social">
+                    <a href="" class="social_icon">
+                        <img src="./images/tweet.png" alt="">
+                    </a>
+                    <a href="" class="social_icon">
+                        <img src="./images/yt.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/whatsapp.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/tele.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/linked.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/fb.png" alt="">
+                    </a>
+
+                    <a href="" class="social_icon">
+                        <img src="./images/insta.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Row: Line + Menu -->
+            <div class="footer_row footer_bottom">
+
+                <div class="footer_line"></div>
+
+                <nav class="footer_nav">
+                    <a href="">Who we are</a>
+                    <a href="">Our Solutions</a>
+                    <a href="">Who we serve</a>
+                    <a href="">Design Inspiration</a>
+                    <a href="">For Architects</a>
+                    <a href="">Resources</a>
+                    <a href="">Experience Center</a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        (function () {
+            const track = document.getElementById('vivariumTrack');
+            const prevBtn = document.getElementById('vivariumPrev');
+            const nextBtn = document.getElementById('vivariumNext');
+            const slides = track.querySelectorAll('.vivarium-carousel__slide');
+            const total = slides.length;
+            let current = 0;
+            let autoplayTimer = null;
+            const AUTOPLAY_DELAY = 3000;
+
+            function getVisibleCount() {
+                return window.innerWidth <= 480 ? 1 : 2;
+            }
+
+            function getMaxIndex() {
+                return Math.max(0, total - getVisibleCount());
+            }
+
+            function updateCarousel() {
+                const visibleCount = getVisibleCount();
+                const slideWidth = slides[0].offsetWidth;
+                const gap = visibleCount === 1 ? 12 : 16;
+                const offset = current * (slideWidth + gap);
+                track.style.transform = `translateX(-${offset}px)`;
+                prevBtn.style.opacity = '1';
+                nextBtn.style.opacity = '1';
+            }
+
+            function goNext() {
+                current = current >= getMaxIndex() ? 0 : current + 1;
+                updateCarousel();
+            }
+
+            function goPrev() {
+                current = current <= 0 ? getMaxIndex() : current - 1;
+                updateCarousel();
+            }
+
+            function startAutoplay() {
+                stopAutoplay();
+                autoplayTimer = setInterval(goNext, AUTOPLAY_DELAY);
+            }
+
+            function stopAutoplay() {
+                if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; }
+            }
+
+            nextBtn.addEventListener('click', function () {
+                goNext();
+                stopAutoplay();
+                startAutoplay();
+            });
+
+            prevBtn.addEventListener('click', function () {
+                goPrev();
+                stopAutoplay();
+                startAutoplay();
+            });
+
+            let wheelThrottle = false;
+            track.closest('.vivarium-carousel').addEventListener('wheel', function (e) {
+                e.preventDefault();
+                if (wheelThrottle) return;
+                wheelThrottle = true;
+                if (e.deltaY > 0 || e.deltaX > 0) { goNext(); } else { goPrev(); }
+                stopAutoplay();
+                startAutoplay();
+                setTimeout(function () { wheelThrottle = false; }, 600);
+            }, { passive: false });
+
+            /* --- Mouse & Touch Drag --- */
+            const carousel = track.closest('.vivarium-carousel');
+            let dragStartX = 0;
+            let isDragging = false;
+            const DRAG_THRESHOLD = 50;
+
+            function onDragStart(x) {
+                dragStartX = x;
+                isDragging = true;
+                track.style.transition = 'none';
+                carousel.style.cursor = 'grabbing';
+            }
+
+            function onDragEnd(x) {
+                if (!isDragging) return;
+                isDragging = false;
+                track.style.transition = '';
+                carousel.style.cursor = 'grab';
+                const diff = dragStartX - x;
+                if (Math.abs(diff) >= DRAG_THRESHOLD) {
+                    if (diff > 0) { goNext(); } else { goPrev(); }
+                    stopAutoplay();
+                    startAutoplay();
+                } else {
+                    updateCarousel();
+                }
+            }
+
+            /* Mouse */
+            carousel.addEventListener('mousedown', function (e) { onDragStart(e.clientX); });
+            window.addEventListener('mousemove', function (e) {
+                if (!isDragging) return;
+                const diff = dragStartX - e.clientX;
+                const visibleCount = getVisibleCount();
+                const slideWidth = slides[0].offsetWidth;
+                const gap = visibleCount === 1 ? 12 : 16;
+                const baseOffset = current * (slideWidth + gap);
+                track.style.transform = `translateX(-${baseOffset + diff}px)`;
+            });
+            window.addEventListener('mouseup', function (e) { onDragEnd(e.clientX); });
+            carousel.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+            /* Touch */
+            carousel.addEventListener('touchstart', function (e) { onDragStart(e.touches[0].clientX); }, { passive: true });
+            carousel.addEventListener('touchmove', function (e) {
+                if (!isDragging) return;
+                const diff = dragStartX - e.touches[0].clientX;
+                const visibleCount = getVisibleCount();
+                const slideWidth = slides[0].offsetWidth;
+                const gap = visibleCount === 1 ? 12 : 16;
+                const baseOffset = current * (slideWidth + gap);
+                track.style.transform = `translateX(-${baseOffset + diff}px)`;
+            }, { passive: true });
+            carousel.addEventListener('touchend', function (e) { onDragEnd(e.changedTouches[0].clientX); });
+
+            carousel.style.cursor = 'grab';
+
+            window.addEventListener('resize', function () {
+                current = Math.min(current, getMaxIndex());
+                updateCarousel();
+            });
+
+            updateCarousel();
+            startAutoplay();
+        })();
+    </script>
+
+    <script>
+        window.addEventListener('load', function () {
+            const track = document.getElementById('testiTrack');
+            if (!track) return;
+            const wrapper = track.parentElement;
+            const slides = track.querySelectorAll('.testi-slide');
+            const total = slides.length;
+            let current = 0;
+            let timer = null;
+            const DELAY = 4000;
+
+            function setWidths() {
+                const w = wrapper.offsetWidth;
+                slides.forEach(function (s) {
+                    s.style.width = w + 'px';
+                    s.style.minWidth = w + 'px';
+                    s.style.maxWidth = w + 'px';
+                });
+            }
+
+            function go(index) {
+                current = (index + total) % total;
+                track.style.transform = 'translateX(-' + (current * wrapper.offsetWidth) + 'px)';
+            }
+
+            function start() {
+                stop();
+                timer = setInterval(function () { go(current + 1); }, DELAY);
+            }
+
+            function stop() {
+                if (timer) { clearInterval(timer); timer = null; }
+            }
+
+            window.addEventListener('resize', function () { setWidths(); go(current); });
+
+            /* Touch swipe */
+            let startX = 0, dragging = false;
+            track.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; dragging = true; }, { passive: true });
+            track.addEventListener('touchend', function (e) {
+                if (!dragging) return;
+                dragging = false;
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 50) { go(diff > 0 ? current + 1 : current - 1); stop(); start(); }
+            });
+
+            setWidths();
+            go(0);
+            start();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script>
+
+        /*  SCROLL — LENIS + GSAP */
+
+        const lenis = new Lenis({
+            duration: 1.1,
+            smooth: true,
+            smoothTouch: false,
+            wheelMultiplier: 1
+        });
+
+        lenis.on('scroll', ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+
+        gsap.ticker.lagSmoothing(0);
+
+
+
+        /* HEADER BEHAVIOUR*/
+
+        $(window).scroll(function () {
+            $(window).scrollTop() >= 200
+                ? $('header').addClass('darkHeader')
+                : $('header').removeClass('darkHeader');
+        });
+
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function () {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            document.body.classList.toggle('scrolling-up', st < lastScrollTop);
+            document.body.classList.toggle('scrolling-down', st > lastScrollTop);
+            lastScrollTop = st;
+        });
+
+        $('.mb_menu_btn').click(function () {
+            $('header').toggleClass('open_menu');
+            $(this).toggleClass('close_menu ham_btn');
+        });
+
+
+
+        /*GSAP ANIMATIONS — CLEAN + SMOOTH */
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        function fadeUp(targets, trigger, options) {
+            gsap.from(targets, Object.assign({
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: trigger,
+                    start: 'top 82%',
+                }
+            }, options));
+        }
+
+
+
+        /* HERO SECTION*/
+
+        gsap.from(".project-hero__title", {
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            ease: "power3.out"
+        });
+
+        gsap.from(".ph-card__label, .ph-card__value", {
+            y: 20,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.05,
+            delay: 0.3,
+            scrollTrigger: {
+                trigger: ".project-hero",
+                start: "top 80%"
+            }
+        });
+
+
+
+        /* VIVARIUM SECTION*/
+
+        fadeUp('.vivarium-heading', '.vivarium-section');
+        fadeUp('.vivarium-col-carousel', '.vivarium-section', {
+            x: 40,
+            y: 0,
+            duration: 1,
+            delay: 0.2
+        });
+
+        gsap.from(".vivarium-carousel__slide img", {
+            scale: 1.1,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".vivarium-section",
+                start: "top 85%"
+            }
+        });
+
+
+
+        /* CHALLENGE / APPROACH / RESULT CARDS */
+
+        gsap.from('.car-card', {
+            y: 60,
+            opacity: 0,
+            duration: 0.7,
+            ease: 'power2.out',
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: '.car-section',
+                start: 'top 82%'
+            }
+        });
+
+        gsap.from(".car-card__heading", {
+            y: 20,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: ".car-section",
+                start: "top 85%"
+            }
+        });
+
+
+
+        /* TESTIMONIAL SECTION*/
+
+        fadeUp('.testi-heading', '.testi-section');
+        fadeUp('.testi-slider-wrap', '.testi-section', { delay: 0.2 });
+
+        gsap.from(".testi-slide", {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: ".testi-section",
+                start: "top 85%"
+            }
+        });
+
+
+
+        /* PRODUCT SECTION */
+
+        fadeUp('.pup-heading');
+
+        gsap.set(".pup-card", {
+            opacity: 0,
+            y: 40,
+            scale: 0.95
+        });
+
+        gsap.to(".pup-card", {
+            scrollTrigger: {
+                trigger: ".pup-section",
+                start: "top 60%",
+                toggleActions: "play none none reverse"
+            },
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power3.out"
+        });
+
+
+
+
+
+        /*CONTACT FORM*/
+
+        fadeUp('.ecf-heading', '.ecf-section');
+        fadeUp('.ecf-form', '.ecf-section', {
+            x: 40,
+            y: 0,
+            duration: 1,
+            delay: 0.2
+        });
+
+        gsap.from(".ecf-field input, .ecf-field textarea", {
+            y: 30,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: ".ecf-form",
+                start: "top 85%"
+            }
+        });
+
+        fadeUp('.ecf-footer-img', '.ecf-footer-img', {
+            y: 30,
+            duration: 1
+        });
+
+
+
+        /* FOOTER ANIMATION (PREMIUM TIMELINE) */
+
+        const footerTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: 'footer',
+                start: "top 80%"
+            }
+        });
+
+        const footerText = new SplitText('.footer_text p', { type: 'lines' });
+
+        footerTl
+            .from(footerText.lines, {
+                y: 20,
+                opacity: 0,
+                stagger: 0.03,
+                duration: 0.4,
+                ease: "power2.out"
+            })
+            .from('.footer_contact_info .f_info', {
+                x: 20,
+                opacity: 0,
+                stagger: 0.05,
+                duration: 0.3
+            }, "-=0.3")
+            .from('.footer_logo img', {
+                y: 30,
+                opacity: 0,
+                duration: 0.4
+            }, "-=0.2")
+            .from('.footer_logo .footer_contact_btn', {
+                y: 15,
+                opacity: 0,
+                duration: 0.3
+            }, "-=0.2")
+            .fromTo('.footer_social .social_icon', {
+                y: 15,
+                opacity: 0,
+            }, {
+                y: 0,
+                opacity: 1,
+                stagger: 0.03,
+                duration: 0.25,
+                ease: "power2.out",
+            }, "-=0.2")
+
+            .from('.footer_line', {
+                scaleX: 0,
+                transformOrigin: "left center",
+                duration: 0.5
+            }, "-=0.15")
+            .from('.footer_nav a', {
+                y: 10,
+                opacity: 0,
+                stagger: 0.03,
+                duration: 0.25
+            }, "-=0.3");
+
+    </script>
+
+</body>
+
+</html>
